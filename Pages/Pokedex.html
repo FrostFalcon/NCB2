@@ -122,6 +122,25 @@
     <div class="Footer"></div>
     
     <script>
+        currentPoke = 0;
+        document.getElementById("pokelist").onkeydown = (e) =>
+        {
+            e.preventDefault();
+            if (document.getElementById("searchBox").value == "")
+            {
+                if (e.keyCode == 38)
+                {
+                    if (currentPoke > 0) OpenPokedexEntry(pokedexEntries[currentPoke - 1], true);
+                    document.getElementById("pokelist").scrollTop = 40 + 103.6 * currentPoke;
+                }
+                else if (e.keyCode == 40)
+                {
+                    if (currentPoke < 648) OpenPokedexEntry(pokedexEntries[currentPoke + 1], true);
+                    document.getElementById("pokelist").scrollTop = 40 + 103.6 * currentPoke;
+                }
+            }
+        };
+
         document.getElementById("searchBox").addEventListener("input", e =>
         {
             SetupList(document.getElementById("searchBox").value);

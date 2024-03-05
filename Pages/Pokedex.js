@@ -168,6 +168,7 @@ function GoHome()
 
 function OpenPokedexEntry(poke, resetForms)
 {
+    currentPoke = pokedexEntries.indexOf(poke);
     document.getElementById("pokeImage").style.backgroundImage = 'url("../DexSprites/' + poke.name + '.png")';
     
     document.getElementById("statBox").innerHTML = "";
@@ -307,7 +308,6 @@ function OpenPokedexEntry(poke, resetForms)
     for (let i = 0; i < poke.tms.length; i++)
     {
         let move = poke.tms[i];
-        console.log(move);
 
         let t = document.createElement("div");
         t.className = "TypeIcon";
