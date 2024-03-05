@@ -1,0 +1,35 @@
+<HTML lang="en">
+	<link rel="stylesheet" href="../style.css">
+	<script src="Pokedex.js"></script>
+    <script src="../Data/PokedexEntries.js"></script>
+
+	<HEAD>
+		<META CHARSET="UTF-8">
+		<TITLE>Changelog</TITLE>
+	</HEAD>
+	<div id="name" style="font: 24px sans-serif">Changelog</div>
+    <body id="header">
+	    <button onclick="OpenPokedex()">Back</button>
+
+    </body>
+    <script>
+        let url = decodeURI(window.location.toString());
+        let pkid = url.substring(url.indexOf("=") + 1) - 1;
+        let poke = pokedexEntries[pkid];
+        document.title = poke.name;
+        document.getElementById('name').innerHTML = poke.name;
+
+        let spr = document.createElement("div");
+        spr.className = "PokedexPage";
+        spr.style.backgroundColor = type1Colors[poke.type1];
+        spr.style.borderColor = type2Colors[poke.type2];
+        spr.style.backgroundImage = 'url("../DexSprites/' + poke.name + '.png")';
+        document.getElementById('header').append(spr);
+
+        function OpenPokedex()
+		{
+			history.pushState(null, document.title, location.pathname);
+			window.location.replace("Pokedex.html");
+		}
+    </script>
+</HTML>

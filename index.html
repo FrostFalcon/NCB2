@@ -1,0 +1,17 @@
+<HTML lang="en">
+	<link rel="stylesheet" href="style.css">
+	<HEAD>
+		<META CHARSET="UTF-8">
+		<TITLE>Changelog</TITLE>
+	</HEAD>
+	<div style="font: 24px sans-serif">Changelog</div>
+	<button class="MainMenuButton PokedexButton" onclick="OpenPokedex()">Pokedex</button>
+
+	<script>
+		function OpenPokedex()
+		{
+			history.pushState(null, document.title, location.pathname);
+			window.location.replace("Pages/Pokedex.html");
+		}
+	</script>
+</HTML>
