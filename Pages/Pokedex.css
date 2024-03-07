@@ -236,11 +236,6 @@
     height: 100;
     background-color: transparent;
     border-color: transparent;
-    font: 32px monospace;
-    color: white;
-    text-align: left;
-    text-indent: 37%;
-    text-shadow: 2px 1px gray;
     
     background-position: center;
     background-size: 80%;
@@ -252,4 +247,15 @@
     background-size: 100%;
     color: rgb(251, 243, 105);
     text-shadow: 2px 1px rgb(170, 146, 48);
+}
+
+.EvoLabel
+{
+    position: absolute;
+    font: 24px monospace;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+    pointer-events: none;
+    white-space: pre-wrap;
 }

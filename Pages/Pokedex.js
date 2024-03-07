@@ -1,90 +1,3 @@
-formIcons = 
-{
-    685: "-a",
-    686: "-d",
-    687: "-s",
-    688: "-s",
-    689: "-t",
-    690: "-s",
-    691: "-o",
-    692: "-h",
-    693: "-w",
-    694: "-f",
-    695: "-s",
-    696: "-m",
-    697: "-s",
-    698: "-r",
-    699: "-i",
-    700: "-b",
-    701: "d",
-    702: "-p",
-    703: "-b",
-    704: "-w",
-    705: "-r",
-    706: "-s",
-    707: "-s",
-    708: "-s"
-};
-
-class Pokemon
-{
-    constructor(id, name, baseid, formid, baseStats, oldStats, types, abilities, evYield, genderRatio, levelRate, levelUpMoves, tms, evolutionMethods, associates)
-    {
-        this.id = id;
-        this.name = name;
-        this.baseid = baseid;
-        this.formid = formid;
-
-        this.sprite = "https://www.serebii.net/blackwhite/pokemon/" + LeadingZeros(id) + ".png";
-        if ([252, 253, 254].includes(id))
-        {
-            this.icon = "https://www.serebii.net/pokedex-sm/icon/" + LeadingZeros(id + 470) + ".png";
-        }
-        else if (id in formIcons)
-        {
-            this.icon = "https://www.serebii.net/pokedex-sm/icon/" + LeadingZeros(this.baseid) + formIcons[id] + ".png";
-        }
-        else
-        {
-            this.icon = "https://www.serebii.net/pokedex-sm/icon/" + LeadingZeros(id) + ".png";
-        }
-
-        this.baseStats = baseStats;
-        this.baseHP = baseStats[0];
-        this.baseAtt = baseStats[1];
-        this.baseDef = baseStats[2];
-        this.baseSpA = baseStats[3];
-        this.baseSpD = baseStats[4];
-        this.baseSpe = baseStats[5];
-        this.baseStatTotal = this.baseHP + this.baseAtt + this.baseDef + this.baseSpA + this.baseSpD + this.baseSpe;
-
-        this.oldbaseStats = oldStats;
-        this.oldBaseHP = oldStats[0];
-        this.oldBaseAtt = oldStats[1];
-        this.oldBaseDef = oldStats[2];
-        this.oldBaseSpA = oldStats[3];
-        this.oldBaseSpD = oldStats[4];
-        this.oldBaseSpe = oldStats[5];
-        this.oldBaseStatTotal = this.oldBaseHP + this.oldBaseAtt + this.oldBaseDef + this.oldBaseSpA + this.oldBaseSpD + this.oldBaseSpe;
-
-        this.type1 = types[0];
-        this.type2 = types[1];
-        this.ability1 = abilities[0];
-        this.ability2 = abilities[1];
-        this.ability3 = abilities[2];
-
-        this.evYield = evYield;
-        this.genderRatio = genderRatio;
-        this.levelRate = levelRate;
-
-        this.levelUpMoves = levelUpMoves;
-        this.tms = tms;
-
-        this.evolutionMethods = evolutionMethods;
-        this.associates = associates;
-    }
-}
-
 function LeadingZeros(num)
 {
     return ("000" + num).substring(("000" + num).length - 3);
@@ -150,9 +63,12 @@ function CheckFilter(filter, poke)
     {
         return true;
     }
-    if (dropdown == "Evolution" && (poke.name.toLowerCase().includes(filter) || poke.associates.some(function (item)
+    if (dropdown == "Evolution" && (poke.name.toLowerCase().includes(filter) || poke.forms.some(function (item)
     {
         return item.toLowerCase().includes(filter)
+    }) || poke.evolutionMethods.some(function (item)
+    {
+        return item.from.toLowerCase().includes(filter) || item.to.toLowerCase().includes(filter)
     })))
     {
         return true;
@@ -238,36 +154,119 @@ function OpenPokedexEntry(poke, resetForms)
     if (resetForms)
     {
         document.getElementById("formList").innerHTML = "";
-        for (let i = 0; i < poke.associates.length; i++)
+        for (let i = 0; i < poke.forms.length; i++)
         {
-            let form = pokedexEntries.find((p) => { return p.name == poke.associates[i]});
+            let form = pokedexEntries.find((p) => { return p.name == poke.forms[i]});
             if (form != null)
             {
-                let icon = document.createElement("div");
-                icon.className = "PokeFormIcon"
-                icon.zIndex = 12;
-                icon.style.backgroundImage = "url(" + form.icon + ")";
-                icon.style.top = 440;
-                icon.style.left = 20 + 90 * i;
-                icon.addEventListener("click", function() {
-                    OpenPokedexEntry(form, false);
-                });
-                document.getElementById("formList").appendChild(icon);
+                MakeFormIcon(20 + 90 * i, 440, form);
             }
         }
     }
-    for (let i = 0; i < poke.associates.length; i++)
+    for (let i = 0; i < poke.forms.length; i++)
     {
-        let form = pokedexEntries.find((p) => { return p.name == poke.associates[i]});
+        let form = pokedexEntries.find((p) => { return p.name == poke.forms[i]});
         if (form == poke)
         {
             document.getElementById("formOutline").style.top = 440;
             document.getElementById("formOutline").style.left = 16 + 90 * (i);
-            if (poke.associates.indexOf(poke.name) == 0)
+            if (poke.forms.indexOf(poke.name) == 0)
                 document.getElementById("formOutline").style.left = 16 + 90 * (i + poke.formid);
         }
     }
     document.getElementById("dexPage").scrollTop = 0;
+
+    //Evolutions
+    let evoHeight = 600;
+    if (resetForms && poke.evolutionMethods.length > 0)
+    {
+        let usedEvos = {};
+        let evoNames = [];
+        for (let i = 0; i < poke.evolutionMethods.length; i++)
+        {
+            let fromIcon = [];
+            let form = pokedexEntries.find((p) => { return p.name == poke.evolutionMethods[i].from});
+            if (!(form.name in usedEvos))
+            {
+                let x = 400 + 90 * i;
+                let y = 440;
+                let icon = MakeFormIcon(x, y, form);
+
+                usedEvos[form.name] = [icon, x, y, poke.evolutionMethods[i]];
+                evoNames.push(form.name);
+                fromIcon = [icon, x, y];
+            }
+            else
+            {
+                fromIcon = usedEvos[form.name];
+            }
+
+            form = pokedexEntries.find((p) => { return p.name == poke.evolutionMethods[i].to});
+            let x = fromIcon[1] + 160;
+            let y = fromIcon[2];
+            let icon = MakeFormIcon(x, y, form);
+
+            usedEvos[form.name] = [icon, x, y, poke.evolutionMethods[i]];
+            evoNames.push(form.name);
+        }
+
+        //Group icons by x position
+        let evoGroups = [];
+        let usedX = [];
+        for (let key in usedEvos)
+        {
+            if (usedX.includes(usedEvos[key][1]))
+            {
+                evoGroups[usedX.indexOf(usedEvos[key][1])].push(usedEvos[key]);
+            }
+            else
+            {
+                evoGroups.push([usedEvos[key]]);
+                usedX.push(usedEvos[key][1]);
+            }
+        }
+
+        //Get total height
+        let height = 0;
+        for (let i = 0; i < evoGroups.length; i++)
+        {
+            if (evoGroups[i].length > height) height = evoGroups[i].length;
+        }
+
+        //Case for eevee
+        if (height > 2)
+        {
+            for (let i = 0; i < evoGroups.length; i++)
+            {
+                for (let j = 0; j < evoGroups[i].length; j++)
+                {
+                    if (i == 0) evoGroups[i][j][0].style.left = 520 - 60 * (evoGroups[i].length - 1) + 120 * j;
+                    else
+                    {
+                        evoGroups[i][j][0].style.left = 520 - 60 * (evoGroups[i].length - 1) + 120 * j;
+                        evoGroups[i][j][0].style.top = 640;
+                        MakeEvoLabel(440 - 60 * (evoGroups[i].length - 1) + 120 * j, 540 + 60 * (j % 2), evoGroups[i][j][3])
+                    }
+                }
+            }
+        }
+        else
+        {
+            let startX = evoGroups.length >= 3 ? 300 : 440;
+            let startY = height == 1 ? 440 : 520;
+            for (let i = 0; i < evoGroups.length; i++)
+            {
+                for (let j = 0; j < evoGroups[i].length; j++)
+                {
+                    evoGroups[i][j][0].style.left = startX + 280 * i;
+                    evoGroups[i][j][0].style.top = startY - 80 * (evoGroups[i].length - 1) + 160 * j;
+                    if (i != 0)
+                        MakeEvoLabel(startX + 280 * i - 220, startY - 80 * (evoGroups[i].length - 1) + 160 * j + 36, evoGroups[i][j][3])
+                }
+            }
+        }
+        evoHeight = height > 2 ? 760 : height == 2 ? 720 : 600;
+    }
 
     //Moves
     document.getElementById("learnsetBox").innerHTML = "";
@@ -335,8 +334,70 @@ function OpenPokedexEntry(poke, resetForms)
         label.style.top = 40 * i;
         document.getElementById("learnsetTMBox").appendChild(label);
     }
+    if (resetForms)
+    {
+        document.getElementById("learnsetBox").parentElement.style.top = evoHeight;
+        document.getElementById("learnsetTMBox").parentElement.style.top = evoHeight;
+    }
     document.getElementById("learnsetTMBox").parentElement.style.height = Math.max(poke.tms.length * 40 + 12, 40);
     document.getElementById("learnsetTMBox").append(document.createElement("br"));
+}
+
+function MakeFormIcon(x, y, poke)
+{
+    let icon = document.createElement("div");
+    icon.className = "PokeFormIcon"
+    icon.zIndex = 12;
+    icon.style.backgroundImage = "url(" + poke.icon + ")";
+    icon.style.top = y;
+    icon.style.left = x;
+    icon.addEventListener("click", function() {
+        OpenPokedexEntry(poke, true);
+    });
+    document.getElementById("formList").appendChild(icon);
+    return icon;
+}
+
+function MakeEvoLabel(x, y, evo)
+{
+    let s = "";
+    if (evo.method == 1) s += "Friendship";
+    else if (evo.method == 2) s += "Friendship\n(day)";
+    else if (evo.method == 3) s += "Friendship\n(night)";
+    else if (evo.method == 4) s += "Lv. " + evo.parameter;
+    else if (evo.method == 5) s += "Trade";
+    else if (evo.method == 6) s += "Trade with\n" + evo.parameter;
+    else if (evo.method == 7) s += "Trade Karra /\nShelmet";
+    else if (evo.method == 8) s += evo.parameter;
+    else if (evo.method == 9) s += "Lv. " + evo.parameter + "\nAtt > Def";
+    else if (evo.method == 10) s += "Lv. " + evo.parameter + "\nAtt = Def";
+    else if (evo.method == 11) s += "Lv. " + evo.parameter + "\nAtt < Def";
+    else if (evo.method == 12) s += "Lv. " + evo.parameter + "\nPers < 5";
+    else if (evo.method == 13) s += "Lv. " + evo.parameter + "\nPers > 5";
+    else if (evo.method == 14) s += "Lv. " + evo.parameter;
+    else if (evo.method == 15) s += "Lv. " + evo.parameter + " with\nfree slot";
+    else if (evo.method == 16) s += "Beauty";
+    else if (evo.method == 17) s += evo.parameter + "\n(Male)";
+    else if (evo.method == 18) s += evo.parameter + "\n(Female)";
+    else if (evo.method == 19 || evo.method == 20) s += "Level up with\n" + evo.parameter;
+    else if (evo.method == 21) s += "Level up with\n" + evo.parameter;
+    else if (evo.method == 22) s += "Level up with\n" + evo.parameter;
+    else if (evo.method == 23) s += "Lv. " + evo.parameter + "\n(Male)";
+    else if (evo.method == 24) s += "Lv. " + evo.parameter + "\n(Female)";
+    else if (evo.method == 25) s += "Chargestone\nCave";
+    else if (evo.method == 26) s += "Moss Rock";
+    else if (evo.method == 27) s += "Icy Rock";
+
+    let text = document.createElement("div");
+    text.className = "EvoLabel"
+    text.zIndex = 12;
+    text.style.width = 256;
+    if (s.includes('\n')) text.style.top = y - 12;
+    else text.style.top = y;
+    text.style.left = x;
+    text.innerHTML = s;
+    document.getElementById("formList").appendChild(text);
+    return text;
 }
 
 type1Colors = {
