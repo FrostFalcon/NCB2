@@ -131,6 +131,8 @@ function OpenPokedexEntry(poke, resetForms)
         label.style.left = 432;
         document.getElementById("statBox").appendChild(label);
     }
+    document.getElementById("bstText").innerHTML = "BST: " + (poke.baseStats[0] + poke.baseStats[1] + 
+        poke.baseStats[2] + poke.baseStats[3] + poke.baseStats[4] + poke.baseStats[5]);
 
     document.getElementById("type1Icon").style.backgroundImage = "url(../Images/TypeIcons/" + poke.type1 + ".png";
     if (poke.type1 == poke.type2)
