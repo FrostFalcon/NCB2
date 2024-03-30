@@ -128,7 +128,7 @@ function OpenPokedexEntry(poke, resetForms)
         label.style.marginTop = 8;
         label.innerHTML = poke.baseStats[i];
         label.style.top = 40 * i;
-        label.style.left = 432;
+        label.style.left = 432
         document.getElementById("statBox").appendChild(label);
     }
     document.getElementById("bstText").innerHTML = "BST: " + (poke.baseStats[0] + poke.baseStats[1] + 
@@ -267,8 +267,10 @@ function OpenPokedexEntry(poke, resetForms)
                 }
             }
         }
-        evoHeight = height > 2 ? 760 : height == 2 ? 720 : 600;
+        evoHeight = height > 3 ? 860 : height > 2 ? 760 : height == 2 ? 720 : 680;
     }
+
+    document.getElementById("miscText").innerHTML = "Level Rate: " + poke.levelRate + "<br>EV Yeild: " + poke.evYield;
 
     //Moves
     document.getElementById("learnsetBox").innerHTML = "";
@@ -338,6 +340,7 @@ function OpenPokedexEntry(poke, resetForms)
     }
     if (resetForms)
     {
+        document.getElementById("miscText").style.top = evoHeight - 120;
         document.getElementById("learnsetBox").parentElement.style.top = evoHeight;
         document.getElementById("learnsetTMBox").parentElement.style.top = evoHeight;
     }
