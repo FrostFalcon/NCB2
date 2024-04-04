@@ -179,7 +179,7 @@ function OpenPokedexEntry(poke, resetForms)
     document.getElementById("dexPage").scrollTop = 0;
 
     //Evolutions
-    let evoHeight = 600;
+    let evoHeight = 680;
     if (resetForms && poke.evolutionMethods.length > 0)
     {
         let usedEvos = {};
