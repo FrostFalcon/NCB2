@@ -40,6 +40,10 @@ class Pokemon
         {
             this.icon = "https://www.serebii.net/pokedex-sm/icon/" + LeadingZeros(id + 470) + ".png";
         }
+        else if ([158, 159, 160].includes(id))
+        {
+            this.icon = "https://www.serebii.net/pokedex-sm/icon/" + LeadingZeros(id + 498) + ".png";
+        }
         else if (id in formIcons)
         {
             this.icon = "https://www.serebii.net/pokedex-sm/icon/" + LeadingZeros(this.baseid) + formIcons[id] + ".png";
