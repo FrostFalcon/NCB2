@@ -28,7 +28,7 @@ formIcons =
 
 class Pokemon
 {
-    constructor(id, name, baseid, formid, baseStats, oldStats, types, abilities, evYield, genderRatio, levelRate, levelUpMoves, tms, evolutionMethods, forms)
+    constructor(id, name, baseid, formid, baseStats, oldStats, types, abilities, evYield, genderRatio, levelRate, levelUpMoves, tms, evolutionMethods, forms, locations)
     {
         this.id = id;
         this.name = name;
@@ -86,6 +86,7 @@ class Pokemon
 
         this.evolutionMethods = evolutionMethods;
         this.forms = forms;
+        this.locations = locations;
     }
 }
 

@@ -179,7 +179,7 @@ function OpenPokedexEntry(poke, resetForms)
     document.getElementById("dexPage").scrollTop = 0;
 
     //Evolutions
-    let evoHeight = 680;
+    let evoHeight = 560;
     if (resetForms && poke.evolutionMethods.length > 0)
     {
         let usedEvos = {};
@@ -267,10 +267,28 @@ function OpenPokedexEntry(poke, resetForms)
                 }
             }
         }
-        evoHeight = height > 3 ? 860 : height > 2 ? 760 : height == 2 ? 720 : 680;
+        evoHeight = height > 3 ? 740 : height > 2 ? 640 : height == 2 ? 600 : 560;
     }
 
     document.getElementById("miscText").innerHTML = "Level Rate: " + poke.levelRate + "<br>EV Yeild: " + poke.evYield;
+    //if (resetForms)
+    {
+        document.getElementById("miscText").style.top = evoHeight;
+        document.getElementById("locationText").style.top = evoHeight + 120;
+        document.getElementById("locationText").innerHTML = poke.locations.length == 0 ? "Locations: None" : 
+            poke.locations.length == 1 ? "Location: " : "Locations: ";
+
+        for (let i = 0; i < poke.locations.length; i++)
+        {
+            document.getElementById("locationText").innerHTML += poke.locations[i];
+            if (i < poke.locations.length - 1) document.getElementById("locationText").innerHTML += ", ";
+        }
+        if (poke.locations.length > 8) evoHeight += 26 * (poke.locations.length - 8) / 4
+        
+        evoHeight += 80;
+        document.getElementById("learnsetBox").parentElement.style.top = evoHeight + 120;
+        document.getElementById("learnsetTMBox").parentElement.style.top = evoHeight + 120;
+    }
 
     //Moves
     document.getElementById("learnsetBox").innerHTML = "";
@@ -337,12 +355,6 @@ function OpenPokedexEntry(poke, resetForms)
         label.innerHTML = lv;
         label.style.top = 40 * i;
         document.getElementById("learnsetTMBox").appendChild(label);
-    }
-    if (resetForms)
-    {
-        document.getElementById("miscText").style.top = evoHeight - 120;
-        document.getElementById("learnsetBox").parentElement.style.top = evoHeight;
-        document.getElementById("learnsetTMBox").parentElement.style.top = evoHeight;
     }
     document.getElementById("learnsetTMBox").parentElement.style.height = Math.max(poke.tms.length * 40 + 12, 40);
     document.getElementById("learnsetTMBox").append(document.createElement("br"));
