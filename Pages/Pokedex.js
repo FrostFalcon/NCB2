@@ -73,6 +73,13 @@ function CheckFilter(filter, poke)
     {
         return true;
     }
+    if (dropdown == "Location" && (poke.locations.some(function (item)
+    {
+        return item.toLowerCase().includes(filter)
+    })))
+    {
+        return true;
+    }
     return false;
 }
 
