@@ -26,6 +26,19 @@ formIcons =
     708: "-s"
 };
 
+iconSwaps =
+{
+    69: 722,
+    70: 723,
+    71: 724,
+    287: 656,
+    288: 657,
+    289: 658,
+    290: 653,
+    291: 654,
+    292: 655,
+};
+
 class Pokemon
 {
     constructor(id, name, baseid, formid, baseStats, oldStats, types, abilities, evYield, genderRatio, levelRate, levelUpMoves, tms, evolutionMethods, forms, locations)
@@ -36,13 +49,9 @@ class Pokemon
         this.formid = formid;
 
         this.sprite = "https://www.serebii.net/blackwhite/pokemon/" + LeadingZeros(id) + ".png";
-        if ([252, 253, 254].includes(id))
+        if (id in iconSwaps)
         {
-            this.icon = "https://www.serebii.net/pokedex-sm/icon/" + LeadingZeros(id + 470) + ".png";
-        }
-        else if ([158, 159, 160].includes(id))
-        {
-            this.icon = "https://www.serebii.net/pokedex-sm/icon/" + LeadingZeros(id + 498) + ".png";
+            this.icon = "https://www.serebii.net/pokedex-sm/icon/" + iconSwaps[id] + ".png";
         }
         else if (id in formIcons)
         {

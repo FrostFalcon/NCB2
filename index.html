@@ -6,12 +6,19 @@
 	</HEAD>
 	<div style="font: 24px sans-serif">Changelog</div>
 	<button class="MainMenuButton PokedexButton" onclick="OpenPokedex()">Pokedex</button>
+	<button class="MainMenuButton PokedexButton" onclick="OpenPatching()">Patching</button>
 
 	<script>
 		function OpenPokedex()
 		{
 			history.pushState(null, document.title, location.pathname);
 			window.location.replace("Pages/Pokedex.html");
+		}
+
+		function OpenPatching()
+		{
+			history.pushState(null, document.title, location.pathname);
+			window.location.replace("Pages/Patching.html");
 		}
 	</script>
 </HTML>
