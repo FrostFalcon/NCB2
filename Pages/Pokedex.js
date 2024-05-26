@@ -105,29 +105,41 @@ function OpenPokedexEntry(poke, resetForms)
         label.innerHTML = statNames[i];
         label.style.top = 40 * i;
         document.getElementById("statBox").appendChild(label);
-        
-        let bar = document.createElement("div");
-        bar.className = "StatBar";
-        bar.style.width = Math.pow(poke.baseStats[i] * 2.25, 1 / 1.1) + 10;
-        bar.style.height = 20;
-        bar.style.top = -4 + 40 * i;
-        if (poke.oldbaseStats[i] < poke.baseStats[i])
-        {
-            bar.style.backgroundColor = "rgb(128, 255, 128)";
-        }
-        document.getElementById("statBox").appendChild(bar);
 
-        let bar2 = document.createElement("div");
-        bar2.className = "StatBar";
-        bar2.style.width = Math.pow(poke.oldbaseStats[i] * 2.25, 1 / 1.1) + 10;
-        bar2.style.height = 20;
-        bar2.style.top = -4 + 40 * i;
-        if (poke.oldbaseStats[i] > poke.baseStats[i])
+        if (!(poke.id in iconSwaps))
         {
-            bar2.style.backgroundColor = "rgb(255, 128, 128)";
-            bar.style.zIndex = 11;
+            let bar = document.createElement("div");
+            bar.className = "StatBar";
+            bar.style.width = Math.pow(poke.baseStats[i] * 2.25, 1 / 1.1) + 10;
+            bar.style.height = 20;
+            bar.style.top = -4 + 40 * i;
+            if (poke.oldbaseStats[i] < poke.baseStats[i])
+            {
+                bar.style.backgroundColor = "rgb(128, 255, 128)";
+            }
+            document.getElementById("statBox").appendChild(bar);
+
+            let bar2 = document.createElement("div");
+            bar2.className = "StatBar";
+            bar2.style.width = Math.pow(poke.oldbaseStats[i] * 2.25, 1 / 1.1) + 10;
+            bar2.style.height = 20;
+            bar2.style.top = -4 + 40 * i;
+            if (poke.oldbaseStats[i] > poke.baseStats[i])
+            {
+                bar2.style.backgroundColor = "rgb(255, 128, 128)";
+                bar.style.zIndex = 11;
+            }
+            document.getElementById("statBox").appendChild(bar2);
         }
-        document.getElementById("statBox").appendChild(bar2);
+        else
+        {
+            let bar = document.createElement("div");
+            bar.className = "StatBar";
+            bar.style.width = Math.pow(poke.baseStats[i] * 2.25, 1 / 1.1) + 10;
+            bar.style.height = 20;
+            bar.style.top = -4 + 40 * i;
+            document.getElementById("statBox").appendChild(bar);
+        }
 
         label = document.createElement("div");
         label.className = "StatText";
