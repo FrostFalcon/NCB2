@@ -172,7 +172,7 @@ moveData = {
 	"Mind Reader": new MoveData(170, "Mind Reader", "Normal", "Status", 0, 101, 5, ""),
 	"Nightmare": new MoveData(171, "Nightmare", "Ghost", "Status", 0, 100, 15, ""),
 	"Flame Wheel": new MoveData(172, "Flame Wheel", "Fire", "Physical", 60, 100, 25, ""),
-	"Snore": new MoveData(173, "Snore", "Normal", "Special", 40, 100, 15, ""),
+	"Snore": new MoveData(173, "Snore", "Normal", "Special", 60, 100, 15, ""),
 	"Curse": new MoveData(174, "Curse", "Ghost", "Status", 0, 101, 10, ""),
 	"Flail": new MoveData(175, "Flail", "Normal", "Physical", 1, 100, 15, ""),
 	"Conversion 2": new MoveData(176, "Conversion 2", "Normal", "Status", 0, 101, 30, ""),
