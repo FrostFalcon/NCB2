@@ -2,7 +2,7 @@
 {
     background-color: rgb(138, 138, 138);
     filter:saturate(0) brightness(0.5);
-    background-size: 35%;
+    background-size: 30%;
     background-position: left;
     background-position-x: 5%;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
     color: rgba(252, 207, 207, 0.2);
     text-align: right;
 
-    width: 192;
+    width: 224;
     height: 96;
     padding: 10px;
     border: 4px solid rgb(65, 65, 65);
@@ -21,7 +21,7 @@
 .MainMenuButton:hover
 {
     color: black;
-    background-size: 40%;
+    background-size: 35%;
     background-position-x: 0%;
     filter:none;
     background-color: rgb(211, 211, 211);
@@ -55,4 +55,8 @@
 .PokedexButton
 {
     background-image: url("Images/Pokedex.png");
+}
+.EncountersButton
+{
+    background-image: url("Images/TallGrass.png");
 }
