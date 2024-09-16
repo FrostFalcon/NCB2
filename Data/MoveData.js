@@ -484,7 +484,7 @@ moveData = {
 	"Sludge Wave": new MoveData(482, "Sludge Wave", "Poison", "Special", 70, 100, 15, ""),
 	"Quiver Dance": new MoveData(483, "Quiver Dance", "Bug", "Status", 0, 101, 20, ""),
 	"Heavy Slam": new MoveData(484, "Heavy Slam", "Steel", "Physical", 1, 100, 10, ""),
-	"Synchronoise": new MoveData(485, "Synchronoise", "Psychic", "Special", 120, 100, 15, ""),
+	"Synchronoise": new MoveData(485, "Synchronoise", "Psychic", "Special", 130, 100, 15, ""),
 	"Electro Ball": new MoveData(486, "Electro Ball", "Electric", "Special", 1, 100, 10, ""),
 	"Soak": new MoveData(487, "Soak", "Water", "Status", 0, 100, 20, ""),
 	"Flame Charge": new MoveData(488, "Flame Charge", "Fire", "Physical", 50, 100, 20, ""),

@@ -59,7 +59,7 @@ class Pokemon
         this.baseid = baseid;
         this.formid = formid;
 
-        this.sprite = "https://www.serebii.net/blackwhite/pokemon/" + LeadingZeros(id) + ".png";
+        this.sprite = 'url("../DexSprites/' + name + (formid != 0 ? " (" + formid + ")" : "") + '.png")';
         if (id in iconSwaps)
         {
             this.icon = "https://www.serebii.net/pokedex-sm/icon/" + iconSwaps[id] + ".png";

@@ -91,6 +91,7 @@
     color: white;
     text-align: center;
     text-shadow: 1px 2px dimgray;
+    line-height: 1.8;
 
     width: 160;
     height: 40;
@@ -101,6 +102,79 @@
 
 .CategoryButton:hover
 {
+    background-image: url("../Images/EncounterCategoryButton_Selected.png");
+    color: rgb(251, 243, 105);
+    text-shadow: 2px 1px rgb(170, 146, 48);
+}
+
+.PoolTitle
+{
+    font: 64px monospace;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 2px black;
+    position: absolute;
+    left: 750;
+    width: 800;
+    top: 180;
+    z-index: 14;
+    pointer-events: none;
+}
+
+.PoolEntry
+{
+    padding-top: 0px;
+    margin: 0px 8px;
+    width: 20%;
+    height: 10%;
+    background-color: transparent;
+    border-color: transparent;
+    font: 28px monospace;
+    color: white;
+    text-align: left;
+    text-indent: 5%;
+    text-shadow: 2px 1px gray;
+    background-image: url("../Images/EncounterPoolButton.png");
+    
+    background-position: left;
     background-size: 100%;
-    background-color: rgb(186, 186, 186);
+    background-repeat: no-repeat;
+    transition: 0.2s;
+}
+.PoolEntry:hover
+{
+    background-image: url("../Images/EncounterPoolButton_Selected.png");
+    color: rgb(251, 243, 105);
+    text-shadow: 2px 1px rgb(170, 146, 48);
+}
+
+.piechart
+{
+    position: absolute;
+    z-index: 12;
+    left: 1000px;
+    top: 425px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        pink 70deg,
+        lightblue 0 235deg,
+        orange 0 275deg,
+        red 0
+    );
+}
+
+.PoolPokemonIcon
+{
+    width: 128;
+    height: 128;
+    background-size: cover;
+    image-rendering: pixelated;
+    position: absolute;
+    font: 24px monospace;
+    color: white;
+    text-shadow: 2px 1px black;
+    text-align: center;
+    line-height: 280px;
 }

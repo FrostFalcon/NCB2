@@ -4,6 +4,8 @@
 	<script src="Pokedex.js"></script>
 	<script src="Encounters.js"></script>
 	<script src="../Data/DataTypes.js"></script>
+    <script src="../Data/PokedexEntries.js"></script>
+    <script src="../Data/EncounterPools.js"></script>
 
 	<HEAD>
 		<META CHARSET="UTF-8">
@@ -19,6 +21,37 @@
     onclick="GoHome()"></div>
     <br>
 
+    <select style="
+        position: fixed;
+        height: 28;
+        width: 120;
+        top: 270;
+        left: 1000;
+        font: 20px monospace;
+        background-color: black;
+        outline: 2px outset yellow;
+        color: white;
+        z-index: 6;"
+        name="name" id="seasonDropdown" onchange="LoadPieChart(currentPool)">
+            <option value="0">Spring</option>
+            <option value="1">Summer</option>
+            <option value="2">Autumn</option>
+            <option value="3">Winter</option>
+        </select>
+    <select style="
+        position: fixed;
+        height: 28;
+        width: 120;
+        top: 270;
+        left: 1180;
+        font: 20px monospace;
+        background-color: black;
+        outline: 2px outset yellow;
+        color: white;
+        z-index: 6;"
+        name="name" id="typeDropdown" onchange="LoadPieChart(currentPool)">
+        </select>
+
     <body id="header" style="
         display: inline-block;
         background-color: gray;
@@ -31,15 +64,29 @@
         z-index: 2;
         background-position: 0 0;
         position: fixed;
-        top: 0px;
+        top: 168px;
         left: 0;
         width: 1920;
-        height: 1080;
+        height: 712;
         animation-name: scroll;
         animation-duration: 40s;
         animation-iteration-count: infinite;
-        animation-timing-function: linear;"></div>
+        animation-timing-function: linear;
+        overflow-y: scroll;"></div>
     </body>
+
+    <div id="poolTitle" class="PoolTitle">Aspertia City</div>
+    <div id="piechart" class="piechart"></div>
+    <div id="chart" style="
+    position: absolute;
+    z-index: 13;
+    top: 275px;
+    left: 600px;
+    width: 1200px;
+    height: 600px;
+    overflow-y: hidden;
+    pointer-events: none;">
+    </div>
     <div class="Footer"></div>
     
     <script>
