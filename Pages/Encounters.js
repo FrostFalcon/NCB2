@@ -39,6 +39,8 @@ function SetupCategories()
         document.getElementById('header').append(b);
     }
 
+    document.getElementById('seasonDropdown').selectedIndex = new Date().getMonth() % 4;
+
     currentPool = "";
 
     OpenTab("First Gym");
