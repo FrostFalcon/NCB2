@@ -92,10 +92,10 @@ encounterPools = {
 	},
 	"Route 3" :
 	{
-		0: [["Grass", "Pachirisu", 0.2,"Emolga", 0.2,"Ditto", 0.2,"Pikachu", 0.1,"Plusle", 0.1,"Minun", 0.1,"Cherubi", 0.1,],["Fishing", "Alomomola", 1,],["Surf", "Alomomola", 1,],],
-		1: [["Grass", "Pachirisu", 0.2,"Emolga", 0.2,"Ditto", 0.2,"Pikachu", 0.1,"Plusle", 0.1,"Minun", 0.1,"Cherubi", 0.1,],["Fishing", "Alomomola", 1,],["Surf", "Alomomola", 1,],],
-		2: [["Grass", "Pachirisu", 0.2,"Emolga", 0.2,"Ditto", 0.2,"Pikachu", 0.1,"Plusle", 0.1,"Minun", 0.1,"Cherubi", 0.1,],["Fishing", "Alomomola", 1,],["Surf", "Alomomola", 1,],],
-		3: [["Grass", "Pachirisu", 0.2,"Emolga", 0.2,"Ditto", 0.2,"Pikachu", 0.1,"Plusle", 0.1,"Minun", 0.1,"Cherubi", 0.1,],["Fishing", "Alomomola", 1,],["Surf", "Alomomola", 1,],],
+		0: [["Grass", "Ditto", 0.4,"Pachirisu", 0.1,"Emolga", 0.1,"Pikachu", 0.1,"Plusle", 0.1,"Minun", 0.1,"Cherubi", 0.1,],["Fishing", "Alomomola", 1,],["Surf", "Alomomola", 1,],],
+		1: [["Grass", "Ditto", 0.4,"Pachirisu", 0.1,"Emolga", 0.1,"Pikachu", 0.1,"Plusle", 0.1,"Minun", 0.1,"Cherubi", 0.1,],["Fishing", "Alomomola", 1,],["Surf", "Alomomola", 1,],],
+		2: [["Grass", "Ditto", 0.4,"Pachirisu", 0.1,"Emolga", 0.1,"Pikachu", 0.1,"Plusle", 0.1,"Minun", 0.1,"Cherubi", 0.1,],["Fishing", "Alomomola", 1,],["Surf", "Alomomola", 1,],],
+		3: [["Grass", "Ditto", 0.4,"Pachirisu", 0.1,"Emolga", 0.1,"Pikachu", 0.1,"Plusle", 0.1,"Minun", 0.1,"Cherubi", 0.1,],["Fishing", "Alomomola", 1,],["Surf", "Alomomola", 1,],],
 	},
 	"Wellspring Cave" :
 	{
@@ -246,24 +246,24 @@ encounterPools = {
 	},
 	"Route 14" :
 	{
-		0: [["Grass", "Swablu", 0.2,"Mienfoo", 0.2,"Rufflet", 0.15,"Emolga", 0.15,"Talonflame", 0.15,"Chatot", 0.1,"Farfetch'd", 0.05,],["Fishing", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],["Surf", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],],
-		1: [["Grass", "Swablu", 0.2,"Mienfoo", 0.2,"Rufflet", 0.15,"Emolga", 0.15,"Talonflame", 0.15,"Chatot", 0.1,"Farfetch'd", 0.05,],["Fishing", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],["Surf", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],],
-		2: [["Grass", "Swablu", 0.2,"Mienfoo", 0.2,"Rufflet", 0.15,"Emolga", 0.15,"Talonflame", 0.15,"Chatot", 0.1,"Farfetch'd", 0.05,],["Fishing", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],["Surf", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],],
-		3: [["Grass", "Swablu", 0.2,"Mienfoo", 0.2,"Rufflet", 0.15,"Emolga", 0.15,"Talonflame", 0.15,"Chatot", 0.1,"Farfetch'd", 0.05,],["Fishing", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],["Surf", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],],
+		0: [["Grass", "Swablu", 0.2,"Mienfoo", 0.2,"Rufflet", 0.15,"Talonflame", 0.15,"Emolga", 0.1,"Chatot", 0.1,"Farfetch'd", 0.1,],["Fishing", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],["Surf", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],],
+		1: [["Grass", "Swablu", 0.2,"Mienfoo", 0.2,"Rufflet", 0.15,"Talonflame", 0.15,"Emolga", 0.1,"Chatot", 0.1,"Farfetch'd", 0.1,],["Fishing", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],["Surf", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],],
+		2: [["Grass", "Swablu", 0.2,"Mienfoo", 0.2,"Rufflet", 0.15,"Talonflame", 0.15,"Emolga", 0.1,"Chatot", 0.1,"Farfetch'd", 0.1,],["Fishing", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],["Surf", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],],
+		3: [["Grass", "Swablu", 0.2,"Mienfoo", 0.2,"Rufflet", 0.15,"Talonflame", 0.15,"Emolga", 0.1,"Chatot", 0.1,"Farfetch'd", 0.1,],["Fishing", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],["Surf", "Magikarp", 0.6,"Goldeen", 0.3,"Staryu", 0.1,],],
 	},
 	"Route 13" :
 	{
-		0: [["Grass", "Pelipper", 0.25,"Linoone", 0.25,"Kangaskhan", 0.15,"Skitty", 0.15,"Tropius", 0.1,"Xatu", 0.1,],["Fishing", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],["Surf", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],],
-		1: [["Grass", "Pelipper", 0.25,"Linoone", 0.25,"Kangaskhan", 0.15,"Skitty", 0.15,"Tropius", 0.1,"Xatu", 0.1,],["Fishing", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],["Surf", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],],
-		2: [["Grass", "Pelipper", 0.25,"Linoone", 0.25,"Kangaskhan", 0.15,"Skitty", 0.15,"Tropius", 0.1,"Xatu", 0.1,],["Fishing", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],["Surf", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],],
-		3: [["Grass", "Pelipper", 0.25,"Linoone", 0.25,"Kangaskhan", 0.15,"Skitty", 0.15,"Tropius", 0.1,"Xatu", 0.1,],["Fishing", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],["Surf", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],],
+		0: [["Grass", "Pelipper", 0.2,"Linoone", 0.2,"Tropius", 0.2,"Kangaskhan", 0.15,"Skitty", 0.15,"Xatu", 0.1,],["Fishing", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],["Surf", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],],
+		1: [["Grass", "Pelipper", 0.2,"Linoone", 0.2,"Tropius", 0.2,"Kangaskhan", 0.15,"Skitty", 0.15,"Xatu", 0.1,],["Fishing", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],["Surf", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],],
+		2: [["Grass", "Pelipper", 0.2,"Linoone", 0.2,"Tropius", 0.2,"Kangaskhan", 0.15,"Skitty", 0.15,"Xatu", 0.1,],["Fishing", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],["Surf", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],],
+		3: [["Grass", "Pelipper", 0.2,"Linoone", 0.2,"Tropius", 0.2,"Kangaskhan", 0.15,"Skitty", 0.15,"Xatu", 0.1,],["Fishing", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],["Surf", "Corphish", 0.6,"Wailmer", 0.3,"Remoraid", 0.1,],],
 	},
 	"Route 12" :
 	{
-		0: [["Grass", "Pelipper", 0.25,"Linoone", 0.25,"Kangaskhan", 0.15,"Skitty", 0.15,"Tropius", 0.1,"Xatu", 0.1,],],
-		1: [["Grass", "Pelipper", 0.25,"Linoone", 0.25,"Kangaskhan", 0.15,"Skitty", 0.15,"Tropius", 0.1,"Xatu", 0.1,],],
-		2: [["Grass", "Pelipper", 0.25,"Linoone", 0.25,"Kangaskhan", 0.15,"Skitty", 0.15,"Tropius", 0.1,"Xatu", 0.1,],],
-		3: [["Grass", "Pelipper", 0.25,"Linoone", 0.25,"Kangaskhan", 0.15,"Skitty", 0.15,"Tropius", 0.1,"Xatu", 0.1,],],
+		0: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Dustox", 0.1,"Beautifly", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
+		1: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Dustox", 0.1,"Beautifly", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
+		2: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Dustox", 0.1,"Beautifly", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
+		3: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Dustox", 0.1,"Beautifly", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
 	},
 	"Village Bridge" :
 	{
