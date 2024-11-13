@@ -125,7 +125,7 @@ encounterPools = {
 		2: [["Land", "Cacnea", 0.2,"Cubone", 0.2,"Dwebble", 0.1,"Trapinch", 0.1,"Gligar", 0.1,"Hippopotas", 0.1,"Darumaka", 0.1,"Maractus", 0.05,"Sigilyph", 0.05,],],
 		3: [["Land", "Cacnea", 0.2,"Cubone", 0.2,"Dwebble", 0.1,"Trapinch", 0.1,"Gligar", 0.1,"Hippopotas", 0.1,"Darumaka", 0.1,"Maractus", 0.05,"Sigilyph", 0.05,],],
 	},
-	"Relic Castle" :
+	"Relic Castle 1" :
 	{
 		0: [["Land", "Yamask", 0.2,"Bronzor", 0.2,"Duskull", 0.1,"Golett", 0.1,"Shuppet", 0.1,"Drilbur", 0.1,"Spiritomb", 0.05,"Sableye", 0.05,"Lunatone", 0.04,"Solrock", 0.04,"Deino", 0.02,],],
 		1: [["Land", "Yamask", 0.2,"Bronzor", 0.2,"Duskull", 0.1,"Golett", 0.1,"Shuppet", 0.1,"Drilbur", 0.1,"Spiritomb", 0.05,"Sableye", 0.05,"Lunatone", 0.04,"Solrock", 0.04,"Deino", 0.02,],],
@@ -174,12 +174,26 @@ encounterPools = {
 		2: [["Land", "Durant", 0.2,"Solrock", 0.2,"Donphan", 0.1,"Shieldon", 0.1,"Cranidos", 0.1,"Onix", 0.1,"Nosepass", 0.05,"Archen", 0.05,"Kabuto", 0.05,"Anorith", 0.05,],],
 		3: [["Land", "Durant", 0.2,"Solrock", 0.2,"Donphan", 0.1,"Shieldon", 0.1,"Cranidos", 0.1,"Onix", 0.1,"Nosepass", 0.05,"Archen", 0.05,"Kabuto", 0.05,"Anorith", 0.05,],],
 	},
+	"Twist Mountain" :
+	{
+		0: [["Land", "Cubchoo", 0.2,"Cryogonal", 0.2,"Sneasel", 0.2,"Swinub", 0.15,"Omanyte", 0.1,"Lileep", 0.1,"Aerodactyl", 0.05,],],
+		1: [["Land", "Cubchoo", 0.2,"Cryogonal", 0.2,"Sneasel", 0.2,"Swinub", 0.15,"Omanyte", 0.1,"Lileep", 0.1,"Aerodactyl", 0.05,],],
+		2: [["Land", "Cubchoo", 0.2,"Cryogonal", 0.2,"Sneasel", 0.2,"Swinub", 0.15,"Omanyte", 0.1,"Lileep", 0.1,"Aerodactyl", 0.05,],],
+		3: [["Land", "Cubchoo", 0.2,"Cryogonal", 0.2,"Sneasel", 0.2,"Swinub", 0.15,"Omanyte", 0.1,"Lileep", 0.1,"Aerodactyl", 0.05,],],
+	},
 	"Relic Passage 2" :
 	{
 		0: [["Land", "Boldore", 0.2,"Graveler", 0.2,"Gurdurr", 0.2,"Machop", 0.15,"Onix", 0.1,"Dwebble", 0.1,"Tyrogue", 0.05,],["Fishing", "Relicanth", 0.6,"Corsola", 0.4,],["Surf", "Relicanth", 0.6,"Corsola", 0.4,],],
 		1: [["Land", "Boldore", 0.2,"Graveler", 0.2,"Gurdurr", 0.2,"Machop", 0.15,"Onix", 0.1,"Dwebble", 0.1,"Tyrogue", 0.05,],["Fishing", "Relicanth", 0.6,"Corsola", 0.4,],["Surf", "Relicanth", 0.6,"Corsola", 0.4,],],
 		2: [["Land", "Boldore", 0.2,"Graveler", 0.2,"Gurdurr", 0.2,"Machop", 0.15,"Onix", 0.1,"Dwebble", 0.1,"Tyrogue", 0.05,],["Fishing", "Relicanth", 0.6,"Corsola", 0.4,],["Surf", "Relicanth", 0.6,"Corsola", 0.4,],],
 		3: [["Land", "Boldore", 0.2,"Graveler", 0.2,"Gurdurr", 0.2,"Machop", 0.15,"Onix", 0.1,"Dwebble", 0.1,"Tyrogue", 0.05,],["Fishing", "Relicanth", 0.6,"Corsola", 0.4,],["Surf", "Relicanth", 0.6,"Corsola", 0.4,],],
+	},
+	"Relic Castle 2" :
+	{
+		0: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Sandslash", 0.15,"Krokorok", 0.15,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,],],
+		1: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Sandslash", 0.15,"Krokorok", 0.15,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,],],
+		2: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Sandslash", 0.15,"Krokorok", 0.15,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,],],
+		3: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Sandslash", 0.15,"Krokorok", 0.15,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,],],
 	},
 	"Mistralton Cave" :
 	{
