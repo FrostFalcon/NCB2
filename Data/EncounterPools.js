@@ -190,10 +190,10 @@ encounterPools = {
 	},
 	"Relic Castle 2" :
 	{
-		0: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Sandslash", 0.15,"Krokorok", 0.15,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,],],
-		1: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Sandslash", 0.15,"Krokorok", 0.15,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,],],
-		2: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Sandslash", 0.15,"Krokorok", 0.15,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,],],
-		3: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Sandslash", 0.15,"Krokorok", 0.15,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,],],
+		0: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Krokorok", 0.15,"Sandslash", 0.1,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,"Larvesta", 0.05,],],
+		1: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Krokorok", 0.15,"Sandslash", 0.1,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,"Larvesta", 0.05,],],
+		2: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Krokorok", 0.15,"Sandslash", 0.1,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,"Larvesta", 0.05,],],
+		3: [["Land", "Yamask", 0.2,"Trapinch", 0.2,"Krokorok", 0.15,"Sandslash", 0.1,"Larvitar", 0.1,"Gothita", 0.1,"Solosis", 0.1,"Larvesta", 0.05,],],
 	},
 	"Mistralton Cave" :
 	{
