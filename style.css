@@ -74,7 +74,7 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    background-image: url(../Images/HomeTop.png);
+    background-image: url("Images/HomeTop.png");
     width: 1920;
     height: 72;
     image-rendering: pixelated;
@@ -90,7 +90,7 @@
 
 .Footer
 {
-    background-image: url(../Images/PokedexBottom.png);
+    background-image: url("Images/PokedexBottom.png");
     z-index: 3;
     position: fixed;
     left: 0;
