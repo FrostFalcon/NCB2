@@ -4,11 +4,27 @@
 		<META CHARSET="UTF-8">
 		<TITLE>Changelog</TITLE>
 	</HEAD>
-	<div style="font: 24px sans-serif">Changelog</div>
-	<button class="MainMenuButton PokedexButton" onclick="OpenPokedex()">Pokedex</button>
-	<br><br>
-	<button class="MainMenuButton EncountersButton" onclick="OpenEncounters()">Encounters</button>
-
+    <div class="BG"><strong></strong></div>
+    <div class="Footer"><strong></strong></div>
+    <div class="Banner"><strong>NCB2</strong>
+	</div>
+	<div id="dexBG" style="background-image: url(../Images/PokedexBGGray.png);
+	z-index: 2;
+	background-position: 0 0;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 1920;
+	height: 1000;
+	animation-name: scroll;
+	animation-duration: 40s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	overflow-y: hidden;">
+		<br><br><br><br><br>
+		<button class="MainMenuButton PokedexButton" onclick="OpenPokedex()">Pokedex</button>
+		<button class="MainMenuButton EncountersButton" onclick="OpenEncounters()">Encounters</button>
+	</div>
 	<script>
 		function OpenPokedex()
 		{
