@@ -281,10 +281,10 @@ encounterPools = {
 	},
 	"Village Bridge" :
 	{
-		0: [["Grass", "Swellow", 0.2,"Jigglypuff", 0.2,"Spinda", 0.15,"Castform", 0.15,"Pansear", 0.1,"Panpour", 0.1,"Pansage", 0.1,],["Fishing", "Lumineon", 0.6,"Seaking", 0.3,"Feebas", 0.1,],["Surf", "Lumineon", 0.6,"Lapras", 0.3,"Feebas", 0.1,],],
-		1: [["Grass", "Swellow", 0.2,"Jigglypuff", 0.2,"Spinda", 0.15,"Castform", 0.15,"Pansear", 0.1,"Panpour", 0.1,"Pansage", 0.1,],["Fishing", "Lumineon", 0.6,"Seaking", 0.3,"Feebas", 0.1,],["Surf", "Lumineon", 0.6,"Lapras", 0.3,"Feebas", 0.1,],],
-		2: [["Grass", "Swellow", 0.2,"Jigglypuff", 0.2,"Spinda", 0.15,"Castform", 0.15,"Pansear", 0.1,"Panpour", 0.1,"Pansage", 0.1,],["Fishing", "Lumineon", 0.6,"Seaking", 0.3,"Feebas", 0.1,],["Surf", "Lumineon", 0.6,"Lapras", 0.3,"Feebas", 0.1,],],
-		3: [["Grass", "Swellow", 0.2,"Jigglypuff", 0.2,"Spinda", 0.15,"Castform", 0.15,"Pansear", 0.1,"Panpour", 0.1,"Pansage", 0.1,],["Fishing", "Lumineon", 0.6,"Seaking", 0.3,"Feebas", 0.1,],["Surf", "Lumineon", 0.6,"Lapras", 0.3,"Feebas", 0.1,],],
+		0: [["Grass", "Swellow", 0.2,"Castform", 0.2,"Jigglypuff", 0.1,"Spinda", 0.1,"Pansear", 0.1,"Panpour", 0.1,"Pansage", 0.1,"Smeargle", 0.1,],["Fishing", "Lumineon", 0.6,"Seaking", 0.3,"Feebas", 0.1,],["Surf", "Lumineon", 0.6,"Lapras", 0.3,"Feebas", 0.1,],],
+		1: [["Grass", "Swellow", 0.2,"Castform", 0.2,"Jigglypuff", 0.1,"Spinda", 0.1,"Pansear", 0.1,"Panpour", 0.1,"Pansage", 0.1,"Smeargle", 0.1,],["Fishing", "Lumineon", 0.6,"Seaking", 0.3,"Feebas", 0.1,],["Surf", "Lumineon", 0.6,"Lapras", 0.3,"Feebas", 0.1,],],
+		2: [["Grass", "Swellow", 0.2,"Castform", 0.2,"Jigglypuff", 0.1,"Spinda", 0.1,"Pansear", 0.1,"Panpour", 0.1,"Pansage", 0.1,"Smeargle", 0.1,],["Fishing", "Lumineon", 0.6,"Seaking", 0.3,"Feebas", 0.1,],["Surf", "Lumineon", 0.6,"Lapras", 0.3,"Feebas", 0.1,],],
+		3: [["Grass", "Swellow", 0.2,"Castform", 0.2,"Jigglypuff", 0.1,"Spinda", 0.1,"Pansear", 0.1,"Panpour", 0.1,"Pansage", 0.1,"Smeargle", 0.1,],["Fishing", "Lumineon", 0.6,"Seaking", 0.3,"Feebas", 0.1,],["Surf", "Lumineon", 0.6,"Lapras", 0.3,"Feebas", 0.1,],],
 	},
 	"Route 11" :
 	{

@@ -52,7 +52,7 @@ iconSwaps =
 
 class Pokemon
 {
-    constructor(id, name, baseid, formid, baseStats, oldStats, types, abilities, evYield, genderRatio, levelRate, levelUpMoves, tms, evolutionMethods, forms, locations)
+    constructor(id, name, baseid, formid, baseStats, oldStats, types, abilities, evYield, genderRatio, levelRate, levelUpMoves, tms, eggMoves, eggGroups, tutors, evolutionMethods, forms, locations)
     {
         this.id = id;
         this.name = name;
@@ -103,11 +103,31 @@ class Pokemon
 
         this.levelUpMoves = levelUpMoves;
         this.tms = tms;
+        this.eggMoves = eggMoves;
+        this.eggGroups = eggGroups;
+        this.tutors = tutors;
+
+        this.tutors.sort((a, b) =>
+        {
+            let cost1 = a[0].substring(0, a[0].length - 1);
+            let type1 = a[0].substring(a[0].length - 1, a[0].length);
+            let cost2 = b[0].substring(0, b[0].length - 1);
+            let type2 = b[0].substring(b[0].length - 1, b[0].length);
+            return shardID[type1] == shardID[type2] ? Number(cost1) - Number(cost2) : shardID[type1] - shardID[type2];
+        });
 
         this.evolutionMethods = evolutionMethods;
         this.forms = forms;
         this.locations = locations;
     }
+}
+
+shardID = {
+    "0" : 0,
+    "r" : 1,
+    "b" : 2,
+    "y" : 3,
+    "g" : 4,
 }
 
 class MoveData

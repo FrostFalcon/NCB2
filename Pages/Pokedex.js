@@ -59,6 +59,12 @@ function CheckFilter(filter, poke)
     }) || poke.tms.some(function (item)
     {
         return item.toLowerCase().includes(filter)
+    }) || poke.tutors.some(function (item)
+    {
+        return item[1].toLowerCase().includes(filter)
+    }) || poke.eggMoves.some(function (item)
+    {
+        return item.toLowerCase().includes(filter)
     })))
     {
         return true;
@@ -289,11 +295,12 @@ function OpenPokedexEntry(poke, resetForms)
         evoHeight = height > 3 ? 740 : height > 2 ? 640 : height == 2 ? 600 : 560;
     }
 
-    document.getElementById("miscText").innerHTML = "Level Rate: " + poke.levelRate + "<br>EV Yeild: " + poke.evYield;
+    let eggGroups = poke.eggGroups.length == 1 ? ("Egg Group: " + poke.eggGroups[0]) : ("Egg Groups: " + poke.eggGroups[0] + ", " + poke.eggGroups[1]);
+    document.getElementById("miscText").innerHTML = "Level Rate: " + poke.levelRate + "<br>EV Yeild: " + poke.evYield + "<br>" + eggGroups;
     //if (resetForms)
     {
         document.getElementById("miscText").style.top = evoHeight;
-        document.getElementById("locationText").style.top = evoHeight + 120;
+        document.getElementById("locationText").style.top = evoHeight + 160;
         document.getElementById("locationText").innerHTML = poke.locations.length == 0 ? "Locations: None" : 
             poke.locations.length == 1 ? "Location: " : "Locations: ";
 
@@ -305,8 +312,10 @@ function OpenPokedexEntry(poke, resetForms)
         if (poke.locations.length > 8) evoHeight += 26 * (poke.locations.length - 8) / 4
         
         evoHeight += 80;
-        document.getElementById("learnsetBox").parentElement.style.top = evoHeight + 120;
-        document.getElementById("learnsetTMBox").parentElement.style.top = evoHeight + 120;
+        document.getElementById("learnsetBox").parentElement.style.top = evoHeight + 160;
+        document.getElementById("learnsetTMBox").parentElement.style.top = evoHeight + 160;
+        document.getElementById("learnsetEggMovesBox").parentElement.style.top = evoHeight + 240 + 40 * poke.levelUpMoves.length;
+        document.getElementById("learnsetTutorsBox").parentElement.style.top = evoHeight + 240 + 40 * poke.tms.length;
     }
 
     //Moves
@@ -341,7 +350,6 @@ function OpenPokedexEntry(poke, resetForms)
         document.getElementById("learnsetBox").appendChild(label);
     }
     document.getElementById("learnsetBox").parentElement.style.height = poke.levelUpMoves.length * 40 + 12;
-    document.getElementById("learnsetBox").append(document.createElement("br"));
 
     //TMs
     document.getElementById("learnsetTMBox").innerHTML = "";
@@ -367,16 +375,107 @@ function OpenPokedexEntry(poke, resetForms)
 
         document.getElementById("learnsetTMBox").innerHTML += tms[move] + "<br>";
         
-        let lv = move;
         let label = document.createElement("div");
         label.className = "learnsetMoveText";
         label.style.display = "inline-block";
-        label.innerHTML = lv;
+        label.innerHTML = move;
         label.style.top = 40 * i;
         document.getElementById("learnsetTMBox").appendChild(label);
     }
     document.getElementById("learnsetTMBox").parentElement.style.height = Math.max(poke.tms.length * 40 + 12, 40);
-    document.getElementById("learnsetTMBox").append(document.createElement("br"));
+
+    //Egg Moves
+    document.getElementById("learnsetEggMovesBox").innerHTML = "";
+    for (let i = 0; i < poke.eggMoves.length; i++)
+    {
+        let move = poke.eggMoves[i];
+
+        let t = document.createElement("div");
+        t.className = "TypeIcon";
+        t.style.height = 24;
+        t.style.top = 16 + 40 * i;
+        t.style.left = 252;
+        t.style.backgroundImage = "url(../Images/TypeIcons/" + moveData[move].type + ".png)";
+        document.getElementById("learnsetEggMovesBox").appendChild(t);
+
+        t = document.createElement("div");
+        t.className = "TypeIcon";
+        t.style.height = 28;
+        t.style.top = 14 + 40 * i;
+        t.style.left = 330;
+        t.style.backgroundImage = "url(../Images/TypeIcons/" + moveData[move].category + ".png)";
+        document.getElementById("learnsetEggMovesBox").appendChild(t);
+
+        t = document.createElement("div");
+        t.className = "TypeIcon";
+        t.style.height = 64;
+        t.style.top = -16 + 40 * i;
+        t.style.left = 0;
+        t.style.backgroundImage = "url(../Images/EggIcon.png)";
+        document.getElementById("learnsetEggMovesBox").appendChild(t);
+        
+        let label = document.createElement("div");
+        label.className = "learnsetMoveText";
+        label.style.display = "inline-block";
+        label.innerHTML = move;
+        label.style.top = 40 * i;
+        label.style.left = -20;
+        document.getElementById("learnsetEggMovesBox").appendChild(label);
+    }
+    document.getElementById("learnsetEggMovesBox").parentElement.style.height = Math.max(poke.eggMoves.length * 40 + 12, 40);
+
+    //Tutors
+    document.getElementById("learnsetTutorsBox").innerHTML = "";
+    for (let i = 0; i < poke.tutors.length; i++)
+    {
+        let move = poke.tutors[i];
+
+        let t = document.createElement("div");
+        t.className = "TypeIcon";
+        t.style.height = 24;
+        t.style.top = 16 + 40 * i;
+        t.style.left = 252;
+        t.style.backgroundImage = "url(../Images/TypeIcons/" + moveData[move[1]].type + ".png)";
+        document.getElementById("learnsetTutorsBox").appendChild(t);
+
+        t = document.createElement("div");
+        t.className = "TypeIcon";
+        t.style.height = 28;
+        t.style.top = 14 + 40 * i;
+        t.style.left = 330;
+        t.style.backgroundImage = "url(../Images/TypeIcons/" + moveData[move[1]].category + ".png)";
+        document.getElementById("learnsetTutorsBox").appendChild(t);
+
+        if (move[0] != "0")
+        {
+            let cost = move[0].substring(0, move[0].length - 1);
+            let shard = move[0].substring(move[0].length - 1, move[0].length);
+            let shardIcon = shard == "r" ? "RedShard" : shard == "y" ? "YellowShard" : shard == "b" ? "BlueShard" : "GreenShard";
+            t = document.createElement("div");
+            t.className = "TypeIcon";
+            t.style.height = 48;
+            t.style.top = 2 + 40 * i;
+            t.style.left = 32;
+            t.style.backgroundImage = "url(../Images/" + shardIcon + ".png)";
+            document.getElementById("learnsetTutorsBox").appendChild(t);
+        
+            let label = document.createElement("div");
+            label.className = "learnsetMoveText";
+            label.style.display = "inline-block";
+            label.innerHTML = cost;
+            label.style.top = 40 * i;
+            label.style.right = 364;
+            document.getElementById("learnsetTutorsBox").appendChild(label);
+        }
+        
+        label = document.createElement("div");
+        label.className = "learnsetMoveText";
+        label.style.display = "inline-block";
+        label.innerHTML = move[1];
+        label.style.top = 40 * i;
+        document.getElementById("learnsetTutorsBox").appendChild(label);
+    }
+    document.getElementById("learnsetTutorsBox").parentElement.style.height = Math.max(poke.tutors.length * 40 + 12, 40);
 }
 
 function MakeFormIcon(x, y, poke)
