@@ -23,9 +23,9 @@ encounterPools = {
 	"Floccesy Ranch" :
 	{
 		0: [["Grass", "Mareep", 0.2,"Budew", 0.2,"Cottonee", 0.1,"Slugma", 0.1,"Electrike", 0.1,"Buizel", 0.1,"Sandshrew", 0.05,"Ralts", 0.05,"Riolu", 0.04,"Kricketot", 0.04,"Snorunt", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
-		1: [["Grass", "Mareep", 0.2,"Cherubi", 0.2,"Hoppip", 0.1,"Vulpix", 0.1,"Joltik", 0.1,"Buizel", 0.1,"Phanpy", 0.05,"Munna", 0.05,"Riolu", 0.04,"Kricketot", 0.04,"Aron", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
+		1: [["Grass", "Mareep", 0.2,"Cherubi", 0.2,"Hoppip", 0.1,"Vulpix", 0.1,"Joltik", 0.1,"Buizel", 0.1,"Phanpy", 0.05,"Munna", 0.05,"Riolu", 0.04,"Aron", 0.04,"Kricketot", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
 		2: [["Grass", "Mareep", 0.2,"Petilil", 0.2,"Hoppip", 0.1,"Slugma", 0.1,"Joltik", 0.1,"Slowpoke", 0.1,"Sandshrew", 0.05,"Ralts", 0.05,"Riolu", 0.04,"Venonat", 0.04,"Aron", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
-		3: [["Grass", "Mareep", 0.2,"Foongus", 0.2,"Cottonee", 0.1,"Vulpix", 0.1,"Electrike", 0.1,"Slowpoke", 0.1,"Phanpy", 0.05,"Munna", 0.05,"Riolu", 0.04,"Venonat", 0.04,"Snorunt", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
+		3: [["Grass", "Mareep", 0.2,"Foongus", 0.2,"Cottonee", 0.1,"Vulpix", 0.1,"Electrike", 0.1,"Slowpoke", 0.1,"Phanpy", 0.05,"Munna", 0.05,"Riolu", 0.04,"Spheal", 0.04,"Venonat", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
 	},
 	"Virbank City" :
 	{

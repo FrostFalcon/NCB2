@@ -68,6 +68,18 @@
     background-image: url("Images/TallGrass.png");
 }
 
+.TeamBuilderButton
+{
+    background-image: url("Images/Pokeball.png");
+    background-size: 25%;
+}
+.TeamBuilderButton:hover
+{
+    background-size: 30%;
+    filter:none;
+    background-color: rgb(208, 216, 208);
+}
+
 .Banner
 {
     font: 48px monospace;

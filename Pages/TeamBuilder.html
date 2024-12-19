@@ -1,0 +1,50 @@
+<HTML lang="en">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="Encounters.css">
+	<script src="Pokedex.js"></script>
+	<script src="TeamBuilder.js"></script>
+	<script src="../Data/DataTypes.js"></script>
+    <script src="../Data/PokedexEntries.js"></script>
+
+	<HEAD>
+		<META CHARSET="UTF-8">
+		<TITLE>Encounters</TITLE>
+	</HEAD>
+    <div class="Banner" style="background-image: url('../Images/TeamBuilderTop.png'); width: 960; height: 600;"><strong>Team Builder</strong></div>
+
+    <div class="HomeButton" style="background-image: url(../Images/HomeIcon.png);
+    z-index: 8;
+    position: fixed;
+    top: 88px;
+    left: 8px;"
+    onclick="GoHome()"></div>
+    <br>
+
+    <body id="header" style="
+        display: inline-block;
+        background-color: gray;
+        background-attachment: fixed;
+        text-align: left;">
+        <br>
+
+        <br><br>
+        <div id="dexBG" style="background-image: url(../Images/PokedexBG.png);
+        z-index: 2;
+        background-position: 0 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 1920;
+        height: 1200;
+        animation-name: scroll;
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        overflow-y: hidden;"></div>
+    </body>
+    <div class="Footer"></div>
+    
+    <script>
+        SetupTeamBuilder();
+    </script>
+</HTML>

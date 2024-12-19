@@ -178,3 +178,15 @@
     text-align: center;
     line-height: 280px;
 }
+
+.BlackDropdown
+{
+    position: fixed;
+    height: 28;
+    width: 120;
+    font: 20px monospace;
+    background-color: black;
+    outline: 2px outset yellow;
+    color: white;
+    z-index: 6;
+}

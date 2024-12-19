@@ -23,6 +23,7 @@
 		<br><br><br><br><br>
 		<button class="MainMenuButton PokedexButton" onclick="OpenPokedex()">Pokedex</button>
 		<button class="MainMenuButton EncountersButton" onclick="OpenEncounters()">Encounters</button>
+		<button class="MainMenuButton TeamBuilderButton" onclick="OpenTeamBuilder()">Team Builder</button>
 	</div>
 	<script>
 		function OpenPokedex()
@@ -35,6 +36,12 @@
 		{
 			history.pushState(null, document.title, location.pathname);
 			window.location.replace("Pages/Encounters.html");
+		}
+
+		function OpenTeamBuilder()
+		{
+			history.pushState(null, document.title, location.pathname);
+			window.location.replace("Pages/TeamBuilder.html");
 		}
 	</script>
 </HTML>
