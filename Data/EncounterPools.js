@@ -104,6 +104,13 @@ encounterPools = {
 		2: [["Land", "Roggenrola", 0.2,"Aron", 0.2,"Zubat", 0.2,"Wooper", 0.2,"Woobat", 0.1,"Slowpoke", 0.1,],["Fishing", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],["Surf", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],],
 		3: [["Land", "Roggenrola", 0.2,"Aron", 0.2,"Zubat", 0.2,"Wooper", 0.2,"Woobat", 0.1,"Slowpoke", 0.1,],["Fishing", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],["Surf", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],],
 	},
+	"Striaton City" :
+	{
+		0: [["Fishing", "Basculin", 0.6,"Poliwag", 0.3,"Magikarp", 0.1,],["Surf", "Basculin", 0.6,"Poliwag", 0.3,"Magikarp", 0.1,],],
+		1: [["Fishing", "Basculin", 0.6,"Poliwag", 0.3,"Magikarp", 0.1,],["Surf", "Basculin", 0.6,"Poliwag", 0.3,"Magikarp", 0.1,],],
+		2: [["Fishing", "Basculin", 0.6,"Poliwag", 0.3,"Magikarp", 0.1,],["Surf", "Basculin", 0.6,"Poliwag", 0.3,"Magikarp", 0.1,],],
+		3: [["Fishing", "Basculin", 0.6,"Poliwag", 0.3,"Magikarp", 0.1,],["Surf", "Basculin", 0.6,"Poliwag", 0.3,"Magikarp", 0.1,],],
+	},
 	"Dreamyard 1" :
 	{
 		0: [["Grass", "Munna", 0.2,"Chingling", 0.2,"Meditite", 0.15,"Elgyem", 0.1,"Misdreavus", 0.1,"Patrat", 0.1,"Herdier", 0.1,"Deino", 0.05,],],
