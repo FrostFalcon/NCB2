@@ -10,6 +10,7 @@
 		<META CHARSET="UTF-8">
 		<TITLE>Pokedex</TITLE>
 	</HEAD>
+	<body id="zoomBody" style="zoom: 100%; background-color: rgb(0, 0, 0); overflow: hidden;" >
     <div class="Banner"><strong>Pokedex</strong></div>
 
     <div class="HomeButton" style="background-image: url(../Images/HomeIcon.png);
@@ -84,6 +85,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-color: rgb(64, 64, 64);
+        overflow-x: hidden;
         width: 1085;
         height: 824;
         left: 804;
@@ -190,5 +192,13 @@
 
         SetupList("")
         OpenPokedexEntry(pokedexEntries[0], true);
+
+        function GetZoom() {return Math.min(Math.ceil(window.innerWidth / 19.2), Math.ceil(window.innerHeight / 9.25));}
+        document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
+        window.addEventListener("resize", () =>
+        {
+            document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
+        });
     </script>
+    </body>
 </HTML>

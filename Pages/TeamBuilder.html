@@ -10,6 +10,7 @@
 		<META CHARSET="UTF-8">
 		<TITLE>Encounters</TITLE>
 	</HEAD>
+	<body id="zoomBody" style="zoom: 100%; background-color: rgb(0, 0, 0); overflow: hidden;" >
     <div class="Banner" style="background-image: url('../Images/TeamBuilderTop.png'); width: 960; height: 600;"><strong>Team Builder</strong></div>
 
     <div class="HomeButton" style="background-image: url(../Images/HomeIcon.png);
@@ -20,7 +21,7 @@
     onclick="GoHome()"></div>
     <br>
 
-    <body id="header" style="
+    <div id="header" style="
         display: inline-block;
         background-color: gray;
         background-attachment: fixed;
@@ -35,16 +36,24 @@
         top: 0;
         left: 0;
         width: 1920;
-        height: 1200;
+        height: 920;
         animation-name: scroll;
         animation-duration: 40s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         overflow-y: hidden;"></div>
-    </body>
+    </div>
     <div class="Footer"></div>
     
     <script>
         SetupTeamBuilder();
+
+        function GetZoom() {return Math.min(Math.ceil(window.innerWidth / 19.2), Math.ceil(window.innerHeight / 9.25));}
+        document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
+        window.addEventListener("resize", () =>
+        {
+            document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
+        });
     </script>
+    </body>
 </HTML>

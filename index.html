@@ -4,8 +4,9 @@
 		<META CHARSET="UTF-8">
 		<TITLE>Changelog</TITLE>
 	</HEAD>
-    <div class="Footer"><strong></strong></div>
-    <div class="Banner"><strong>NCB2</strong>
+	<body id="zoomBody" style="zoom: 100%; background-color: rgb(0, 0, 0); overflow: hidden;" >
+    <div id="footer" class="Footer"><strong></strong></div>
+    <div class="Banner" id="romTitle"><strong>NCB2</strong>
 	</div>
 	<div id="dexBG" style="background-image: url('Images/PokedexBGGray.png');
 	z-index: 2;
@@ -14,7 +15,7 @@
 	top: 0px;
 	left: 0;
 	width: 1920;
-	height: 1000;
+	height: 900;
 	animation-name: scroll;
 	animation-duration: 40s;
 	animation-iteration-count: infinite;
@@ -42,5 +43,13 @@
 			history.pushState(null, document.title, location.pathname);
 			window.location.replace("Pages/TeamBuilder.html");
 		}
+
+		function GetZoom() {return Math.min(Math.ceil(window.innerWidth / 19.2), Math.ceil(window.innerHeight / 9.25));}
+		document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
+		window.addEventListener("resize", () =>
+		{
+			document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
+		});
 	</script>
+	</body>
 </HTML>

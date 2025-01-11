@@ -25,7 +25,7 @@ function SetupCategories()
     ];
     for (let i = 0; i < 9; i++)
     {
-        document.getElementById('header').appendChild(document.createElement("br"));
+        document.getElementById('head').appendChild(document.createElement("br"));
         let b = document.createElement("div");
         b.className = "CategoryButton";
         b.innerHTML = text[i];
@@ -36,7 +36,7 @@ function SetupCategories()
         b.addEventListener ("click", function() {
             OpenTab(str);
         });
-        document.getElementById('header').append(b);
+        document.getElementById('head').append(b);
     }
 
     document.getElementById('seasonDropdown').selectedIndex = new Date().getMonth() % 4;

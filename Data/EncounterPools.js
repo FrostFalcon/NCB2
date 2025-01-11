@@ -162,10 +162,10 @@ encounterPools = {
 	},
 	"Route 6" :
 	{
-		0: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Lombre", 0.15,"Foongus", 0.1,"Swinub", 0.1,"Snover", 0.1,"Sandshrew", 0.05,"Vanillite", 0.05,"Spheal", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
-		1: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Lombre", 0.1,"Bibarel", 0.1,"Foongus", 0.1,"Swinub", 0.1,"Vanillite", 0.05,"Spheal", 0.05,"Snover", 0.05,"Sandshrew", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
-		2: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Foongus", 0.15,"Lombre", 0.1,"Swinub", 0.1,"Vanillite", 0.1,"Snover", 0.05,"Sandshrew", 0.05,"Spheal", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
-		3: [["Grass", "Snorunt", 0.2,"Snover", 0.2,"Spheal", 0.15,"Swinub", 0.1,"Vanillite", 0.1,"Sandshrew", 0.1,"Krabby", 0.05,"Foongus", 0.05,"Lombre", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
+		0: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Lombre", 0.1,"Foongus", 0.1,"Swinub", 0.1,"Snover", 0.1,"Sandshrew", 0.05,"Vanillite", 0.05,"Spheal", 0.05,"Castform", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
+		1: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Lombre", 0.1,"Bibarel", 0.1,"Foongus", 0.1,"Castform", 0.1,"Vanillite", 0.05,"Spheal", 0.05,"Snover", 0.05,"Sandshrew", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
+		2: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Foongus", 0.1,"Lombre", 0.1,"Swinub", 0.1,"Vanillite", 0.1,"Snover", 0.05,"Sandshrew", 0.05,"Spheal", 0.05,"Castform", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
+		3: [["Grass", "Snorunt", 0.2,"Snover", 0.2,"Spheal", 0.1,"Swinub", 0.1,"Vanillite", 0.1,"Sandshrew", 0.1,"Krabby", 0.05,"Foongus", 0.05,"Lombre", 0.05,"Castform", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
 	},
 	"Chargestone Cave" :
 	{

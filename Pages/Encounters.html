@@ -11,85 +11,94 @@
 		<META CHARSET="UTF-8">
 		<TITLE>Encounters</TITLE>
 	</HEAD>
-    <div class="Banner"><strong>Encounters</strong></div>
+	<body id="zoomBody" style="zoom: 100%; background-color: rgb(0, 0, 0); overflow: hidden;" >
+        <div class="Banner"><strong>Encounters</strong></div>
 
-    <div class="HomeButton" style="background-image: url(../Images/HomeIcon.png);
-    z-index: 8;
-    position: fixed;
-    top: 88px;
-    left: 8px;"
-    onclick="GoHome()"></div>
-    <br>
-
-    <select style="
+        <div class="HomeButton" style="background-image: url(../Images/HomeIcon.png);
+        z-index: 8;
         position: fixed;
-        height: 28;
-        width: 120;
-        top: 270;
-        left: 1000;
-        font: 20px monospace;
-        background-color: black;
-        outline: 2px outset yellow;
-        color: white;
-        z-index: 6;"
-        name="name" id="seasonDropdown" onchange="LoadPieChart(currentPool)">
-            <option value="0">Spring</option>
-            <option value="1">Summer</option>
-            <option value="2">Autumn</option>
-            <option value="3">Winter</option>
-        </select>
-    <select style="
-        position: fixed;
-        height: 28;
-        width: 120;
-        top: 270;
-        left: 1180;
-        font: 20px monospace;
-        background-color: black;
-        outline: 2px outset yellow;
-        color: white;
-        z-index: 6;"
-        name="name" id="typeDropdown" onchange="LoadPieChart(currentPool)">
-        </select>
-
-    <body id="header" style="
-        display: inline-block;
-        background-color: gray;
-        background-attachment: fixed;
-        text-align: left;">
+        top: 88px;
+        left: 8px;"
+        onclick="GoHome()"></div>
         <br>
 
-        <br><br>
-        <div id="dexBG" style="background-image: url(../Images/PokedexBG.png);
-        z-index: 2;
-        background-position: 0 0;
-        position: fixed;
-        top: 168px;
-        left: 0;
-        width: 1920;
-        height: 712;
-        animation-name: scroll;
-        animation-duration: 40s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        overflow-y: scroll;"></div>
-    </body>
+        <select style="
+            position: fixed;
+            height: 28;
+            width: 120;
+            top: 270;
+            left: 1000;
+            font: 20px monospace;
+            background-color: black;
+            outline: 2px outset yellow;
+            color: white;
+            z-index: 6;"
+            name="name" id="seasonDropdown" onchange="LoadPieChart(currentPool)">
+                <option value="0">Spring</option>
+                <option value="1">Summer</option>
+                <option value="2">Autumn</option>
+                <option value="3">Winter</option>
+            </select>
+        <select style="
+            position: fixed;
+            height: 28;
+            width: 120;
+            top: 270;
+            left: 1180;
+            font: 20px monospace;
+            background-color: black;
+            outline: 2px outset yellow;
+            color: white;
+            z-index: 6;"
+            name="name" id="typeDropdown" onchange="LoadPieChart(currentPool)">
+            </select>
 
-    <div id="poolTitle" class="PoolTitle">Aspertia City</div>
-    <div id="piechart" class="piechart"></div>
-    <div id="chart" style="
-    position: absolute;
-    z-index: 13;
-    top: 275px;
-    left: 600px;
-    width: 1200px;
-    height: 600px;
-    overflow-y: hidden;
-    pointer-events: none;">
-    </div>
-    <div class="Footer"></div>
-    
-    <script>
-        SetupCategories();
-    </script>
+        <div id="head" style="
+            display: inline-block;
+            background-color: gray;
+            background-attachment: fixed;
+            text-align: left;">
+            <br>
+
+            <br><br>
+            <div id="dexBG" style="background-image: url(../Images/PokedexBG.png);
+            z-index: 2;
+            background-position: 0 0;
+            position: fixed;
+            top: 168px;
+            left: 0;
+            width: 100%;
+            height: 716;
+            animation-name: scroll;
+            animation-duration: 40s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            overflow-y: scroll;"></div>
+        </div>
+
+        <div id="poolTitle" class="PoolTitle">Aspertia City</div>
+        <div id="piechart" class="piechart"></div>
+        <div id="chart" style="
+        position: absolute;
+        z-index: 13;
+        top: 275px;
+        left: 600px;
+        width: 1200px;
+        height: 600px;
+        overflow-y: hidden;
+        pointer-events: none;">
+        </div>
+        <div class="Footer"></div>
+        
+        <script>
+            SetupCategories();
+
+            function GetZoom() {return Math.min(Math.ceil(window.innerWidth / 19.2), Math.ceil(window.innerHeight / 9.25));}
+            document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
+            window.addEventListener("resize", () =>
+            {
+                document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
+            });
+        </script>
+    </body>
 </HTML>
