@@ -545,7 +545,7 @@ moveData = {
 	"Head Charge": new MoveData(543, "Head Charge", "Normal", "Physical", 120, 100, 15, ""),
 	"Gear Grind": new MoveData(544, "Gear Grind", "Steel", "Physical", 50, 90, 15, ""),
 	"Searing Shot": new MoveData(545, "Searing Shot", "Fire", "Special", 100, 100, 5, ""),
-	"Techno Blast": new MoveData(546, "Techno Blast", "Normal", "Special", 85, 100, 5, ""),
+	"Techno Blast": new MoveData(546, "Techno Blast", "Normal", "Special", 90, 100, 10, ""),
 	"Relic Song": new MoveData(547, "Relic Song", "Normal", "Special", 75, 100, 10, ""),
 	"Secret Sword": new MoveData(548, "Secret Sword", "Fighting", "Special", 85, 100, 10, ""),
 	"Glaciate": new MoveData(549, "Glaciate", "Ice", "Special", 65, 95, 10, ""),
