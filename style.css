@@ -1,7 +1,7 @@
 .MainMenuButton
 {
     background-color: rgb(104, 104, 104);
-    filter:saturate(0.25) brightness(0.75);
+    filter: saturate(0.25) brightness(0.75);
     background-size: 30%;
     background-position: left;
     background-position-x: 5%;
