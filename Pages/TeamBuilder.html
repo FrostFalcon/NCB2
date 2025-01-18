@@ -11,7 +11,7 @@
 		<TITLE>Encounters</TITLE>
 	</HEAD>
 	<body id="zoomBody" style="zoom: 100%; background-color: rgb(0, 0, 0); overflow: hidden;" >
-    <div class="Banner" style="background-image: url('../Images/TeamBuilderTop.png'); width: 960; height: 600;"><strong>Team Builder</strong></div>
+    <div class="Banner" style="background-image: url('../Images/TeamBuilderTop.png'); width: 1920; height: 672;"><strong>Team Builder</strong></div>
 
     <div class="HomeButton" style="background-image: url(../Images/HomeIcon.png);
     z-index: 8;
@@ -20,6 +20,12 @@
     left: 8px;"
     onclick="GoHome()"></div>
     <br>
+
+    <div class="Label" style="top: 172; left: -12;">Type 1</div>
+    <div class="Label" style="top: 172; left: 168;">Type 2</div>
+    <div class="Label" style="top: 172; left: 396;">Ability</div>
+    <div class="Label" style="top: 172; left: 772;">Weaknesses</div>
+    <div class="Label" style="top: 172; left: 1240;">Resistances</div>
 
     <div id="header" style="
         display: inline-block;
@@ -43,6 +49,24 @@
         animation-timing-function: linear;
         overflow-y: hidden;"></div>
     </div>
+    <div id="matchupIcons" style="
+        display: inline-block;
+        background-color: gray;
+        background-attachment: fixed;
+        text-align: left;"></div>
+
+    <div class="CategoryButton" style="
+    z-index: 8;
+    position: fixed;
+    top: 92px;
+    left: 96px;"
+    onclick="
+    for (let i in typeDropdowns)
+    {
+        typeDropdowns[i].value = 0;
+        CalculateMatchups();
+    }
+    ">Clear</div>
     <div class="Footer"></div>
     
     <script>

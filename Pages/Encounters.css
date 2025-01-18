@@ -190,3 +190,16 @@
     color: white;
     z-index: 6;
 }
+
+.TypeIcon
+{
+    position: absolute;
+    z-index: 11;
+    background-image: url('../Images/TypeIcons/Normal.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    background-color: transparent;
+    width: 64;
+    height: 24;
+}
