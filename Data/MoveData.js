@@ -680,7 +680,7 @@ moveData = {
 	"DontUse": new MoveData(678, "DontUse", "Normal", "Physical", 40, 100, 35, ""),
 	"DontUse": new MoveData(679, "DontUse", "Normal", "Physical", 40, 100, 35, ""),
 	"Stone Cutter": new MoveData(680, "Stone Cutter", "Rock", "Physical", 65, 100, 15, ""),
-	"Ion Pulse": new MoveData(681, "Ion Pulse", "Normal", "Special", 40, 90, 20, ""),
+	"Ion Pulse": new MoveData(681, "Ion Pulse", "Electric", "Special", 40, 90, 20, ""),
 	"Pound": new MoveData(682, "Pound", "Normal", "Physical", 40, 100, 35, ""),
 	"Pound": new MoveData(683, "Pound", "Normal", "Physical", 40, 100, 35, ""),
 	"Pound": new MoveData(684, "Pound", "Normal", "Physical", 40, 100, 35, ""),
