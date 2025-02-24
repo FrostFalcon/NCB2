@@ -1,36 +1,3 @@
-formIcons = 
-{
-    685: "-a",
-    686: "-d",
-    687: "-s",
-    688: "-s",
-    689: "-t",
-    690: "-s",
-    691: "-o",
-    692: "-h",
-    693: "-w",
-    694: "-f",
-    695: "-s",
-    696: "-m",
-    697: "-s",
-    698: "-r",
-    699: "-i",
-    700: "-b",
-    701: "d",
-    702: "-p",
-    703: "-w",
-    704: "-b",
-    705: "-r",
-    706: "-s",
-    707: "-s",
-    708: "-s",
-    710: "-a",
-    711: "-a",
-    712: "-a",
-    713: "-a",
-    714: "-s",
-};
-
 iconSwaps =
 {
     69: 722,
@@ -59,19 +26,8 @@ class Pokemon
         this.baseid = baseid;
         this.formid = formid;
 
-        this.sprite = 'url("../DexSprites/' + name + (formid != 0 ? " (" + formid + ")" : "") + '.png")';
-        if (id in iconSwaps)
-        {
-            this.icon = "https://www.serebii.net/pokedex-sm/icon/" + iconSwaps[id] + ".png";
-        }
-        else if (id in formIcons)
-        {
-            this.icon = "https://www.serebii.net/pokedex-sm/icon/" + LeadingZeros(this.baseid) + formIcons[id] + ".png";
-        }
-        else
-        {
-            this.icon = "https://www.serebii.net/pokedex-sm/icon/" + LeadingZeros(id) + ".png";
-        }
+        this.sprite = 'url("../DexSprites/' + name + '.png")';
+        this.icon = 'url("../IconSprites/' + name + '.png")';
 
         this.baseStats = baseStats;
         this.baseHP = baseStats[0];

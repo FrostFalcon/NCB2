@@ -9,22 +9,22 @@ encounterPools = {
 	"Route 19" :
 	{
 		0: [["Grass", "Lillipup", 0.2,"Purrloin", 0.2,"Minccino", 0.1,"Rattata", 0.1,"Zigzagoon", 0.1,"Fletchling", 0.1,"Deerling", 0.05,"Skitty", 0.05,"Igglybuff", 0.04,"Cleffa", 0.04,"Smeargle", 0.02,],["Fishing", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],["Surf", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],],
-		1: [["Grass", "Buneary", 0.2,"Skitty", 0.2,"Minccino", 0.1,"Rattata", 0.1,"Sentret", 0.1,"Fletchling", 0.1,"Deerling", 0.05,"Lillipup", 0.05,"Togepi", 0.04,"Cleffa", 0.04,"Zorua", 0.02,],["Fishing", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],["Surf", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],],
-		2: [["Grass", "Lillipup", 0.2,"Poochyena", 0.2,"Minccino", 0.1,"Bidoof", 0.1,"Zigzagoon", 0.1,"Hoothoot", 0.1,"Deerling", 0.05,"Glameow", 0.05,"Togepi", 0.04,"Igglybuff", 0.04,"Smeargle", 0.02,],["Fishing", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],["Surf", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],],
-		3: [["Grass", "Buneary", 0.2,"Purrloin", 0.2,"Minccino", 0.1,"Bidoof", 0.1,"Sentret", 0.1,"Snubbull", 0.1,"Hoothoot", 0.05,"Deerling", 0.05,"Togepi", 0.04,"Cleffa", 0.04,"Zorua", 0.02,],["Fishing", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],["Surf", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],],
+		1: [["Grass", "Buneary", 0.2,"Skitty", 0.2,"Minccino", 0.1,"Rattata", 0.1,"Sentret", 0.1,"Fletchling", 0.1,"Deerling (1)", 0.05,"Lillipup", 0.05,"Togepi", 0.04,"Cleffa", 0.04,"Zorua", 0.02,],["Fishing", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],["Surf", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],],
+		2: [["Grass", "Lillipup", 0.2,"Poochyena", 0.2,"Minccino", 0.1,"Bidoof", 0.1,"Zigzagoon", 0.1,"Hoothoot", 0.1,"Deerling (2)", 0.05,"Glameow", 0.05,"Togepi", 0.04,"Igglybuff", 0.04,"Smeargle", 0.02,],["Fishing", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],["Surf", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],],
+		3: [["Grass", "Buneary", 0.2,"Purrloin", 0.2,"Minccino", 0.1,"Bidoof", 0.1,"Sentret", 0.1,"Snubbull", 0.1,"Hoothoot", 0.05,"Deerling (3)", 0.05,"Togepi", 0.04,"Cleffa", 0.04,"Zorua", 0.02,],["Fishing", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],["Surf", "Luvdisc", 0.6,"Poliwag", 0.3,"Chinchou", 0.1,],],
 	},
 	"Route 20" :
 	{
-		0: [["Grass", "Oddish", 0.2,"Starly", 0.2,"Lotad", 0.1,"Caterpie", 0.1,"Azurill", 0.1,"Ledyba", 0.1,"Burmy", 0.05,"Burmy", 0.05,"Burmy", 0.05,"Doduo", 0.05,],["Fishing", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],["Surf", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],],
-		1: [["Grass", "Oddish", 0.2,"Starly", 0.2,"Sunkern", 0.1,"Weedle", 0.1,"Azurill", 0.1,"Surskit", 0.1,"Wurmple", 0.1,"Burmy", 0.05,"Pichu", 0.05,],["Fishing", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],["Surf", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],],
-		2: [["Grass", "Oddish", 0.2,"Pidove", 0.2,"Sunkern", 0.1,"Sewaddle", 0.1,"Poliwag", 0.1,"Spinarak", 0.1,"Wurmple", 0.1,"Burmy", 0.05,"Doduo", 0.05,],["Fishing", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],["Surf", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],],
-		3: [["Grass", "Oddish", 0.2,"Pidove", 0.2,"Lotad", 0.1,"Sewaddle", 0.1,"Poliwag", 0.1,"Surskit", 0.1,"Caterpie", 0.1,"Burmy", 0.05,"Pichu", 0.05,],["Fishing", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],["Surf", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],],
+		0: [["Grass", "Oddish", 0.2,"Starly", 0.2,"Lotad", 0.1,"Caterpie", 0.1,"Azurill", 0.1,"Ledyba", 0.1,"Burmy", 0.05,"Burmy (1)", 0.05,"Burmy (2)", 0.05,"Doduo", 0.05,],["Fishing", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],["Surf", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],],
+		1: [["Grass", "Oddish", 0.2,"Starly", 0.2,"Sunkern", 0.1,"Weedle", 0.1,"Azurill", 0.1,"Surskit", 0.1,"Grubbin", 0.1,"Burmy", 0.05,"Pichu", 0.05,],["Fishing", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],["Surf", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],],
+		2: [["Grass", "Oddish", 0.2,"Pidove", 0.2,"Sunkern", 0.1,"Sewaddle", 0.1,"Poliwag", 0.1,"Spinarak", 0.1,"Grubbin", 0.1,"Burmy (1)", 0.05,"Doduo", 0.05,],["Fishing", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],["Surf", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],],
+		3: [["Grass", "Oddish", 0.2,"Pidove", 0.2,"Lotad", 0.1,"Sewaddle", 0.1,"Poliwag", 0.1,"Surskit", 0.1,"Caterpie", 0.1,"Burmy (2)", 0.05,"Pichu", 0.05,],["Fishing", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],["Surf", "Finneon", 0.6,"Poliwag", 0.3,"Feebas", 0.1,],],
 	},
 	"Floccesy Ranch" :
 	{
-		0: [["Grass", "Mareep", 0.2,"Budew", 0.2,"Cottonee", 0.1,"Slugma", 0.1,"Electrike", 0.1,"Buizel", 0.1,"Sandshrew", 0.05,"Ralts", 0.05,"Riolu", 0.04,"Kricketot", 0.04,"Snorunt", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
-		1: [["Grass", "Mareep", 0.2,"Cherubi", 0.2,"Hoppip", 0.1,"Vulpix", 0.1,"Joltik", 0.1,"Buizel", 0.1,"Phanpy", 0.05,"Munna", 0.05,"Riolu", 0.04,"Aron", 0.04,"Kricketot", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
-		2: [["Grass", "Mareep", 0.2,"Petilil", 0.2,"Hoppip", 0.1,"Slugma", 0.1,"Joltik", 0.1,"Slowpoke", 0.1,"Sandshrew", 0.05,"Ralts", 0.05,"Riolu", 0.04,"Venonat", 0.04,"Aron", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
+		0: [["Grass", "Mareep", 0.2,"Budew", 0.2,"Cutiefly", 0.1,"Slugma", 0.1,"Electrike", 0.1,"Buizel", 0.1,"Sandshrew", 0.05,"Ralts", 0.05,"Riolu", 0.04,"Kricketot", 0.04,"Snorunt", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
+		1: [["Grass", "Mareep", 0.2,"Cherubi", 0.2,"Cutiefly", 0.12,"Vulpix", 0.1,"Joltik", 0.1,"Buizel", 0.1,"Phanpy", 0.05,"Munna", 0.05,"Riolu", 0.04,"Aron", 0.04,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
+		2: [["Grass", "Mareep", 0.2,"Petilil", 0.2,"Hoppip", 0.1,"Slugma", 0.1,"Joltik", 0.1,"Slowpoke", 0.1,"Sandshrew (1)", 0.05,"Ralts", 0.05,"Riolu", 0.04,"Venonat", 0.04,"Aron", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
 		3: [["Grass", "Mareep", 0.2,"Foongus", 0.2,"Cottonee", 0.1,"Vulpix", 0.1,"Electrike", 0.1,"Slowpoke", 0.1,"Phanpy", 0.05,"Munna", 0.05,"Riolu", 0.04,"Spheal", 0.04,"Venonat", 0.02,],["Fishing", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],["Surf", "Staryu", 0.6,"Clamperl", 0.3,"Barboach", 0.1,],],
 	},
 	"Virbank City" :
@@ -64,24 +64,24 @@ encounterPools = {
 	},
 	"Castelia Garden" :
 	{
-		0: [["Grass", "Swablu", 0.2,"Shroomish", 0.2,"Yanma", 0.1,"Cottonee", 0.1,"Petilil", 0.1,"Lileep", 0.1,"Pineco", 0.05,"Dunsparce", 0.05,"Munchlax", 0.04,"Archen", 0.04,"Bagon", 0.02,],],
-		1: [["Grass", "Swablu", 0.2,"Shroomish", 0.2,"Yanma", 0.1,"Cottonee", 0.1,"Petilil", 0.1,"Lileep", 0.1,"Pineco", 0.05,"Dunsparce", 0.05,"Munchlax", 0.04,"Archen", 0.04,"Bagon", 0.02,],],
-		2: [["Grass", "Swablu", 0.2,"Shroomish", 0.2,"Yanma", 0.1,"Cottonee", 0.1,"Petilil", 0.1,"Lileep", 0.1,"Pineco", 0.05,"Dunsparce", 0.05,"Munchlax", 0.04,"Archen", 0.04,"Bagon", 0.02,],],
-		3: [["Grass", "Swablu", 0.2,"Shroomish", 0.2,"Yanma", 0.1,"Cottonee", 0.1,"Petilil", 0.1,"Lileep", 0.1,"Pineco", 0.05,"Dunsparce", 0.05,"Munchlax", 0.04,"Archen", 0.04,"Bagon", 0.02,],],
+		0: [["Grass", "Swablu", 0.2,"Shroomish", 0.2,"Yanma", 0.1,"Cottonee", 0.1,"Petilil", 0.1,"Cutiefly", 0.1,"Lileep", 0.05,"Dunsparce", 0.05,"Munchlax", 0.04,"Archen", 0.04,"Bagon", 0.02,],],
+		1: [["Grass", "Swablu", 0.2,"Shroomish", 0.2,"Yanma", 0.1,"Cottonee", 0.1,"Petilil", 0.1,"Cutiefly", 0.1,"Lileep", 0.05,"Dunsparce", 0.05,"Munchlax", 0.04,"Archen", 0.04,"Bagon", 0.02,],],
+		2: [["Grass", "Swablu", 0.2,"Shroomish", 0.2,"Yanma", 0.1,"Cottonee", 0.1,"Petilil", 0.1,"Cutiefly", 0.1,"Lileep", 0.05,"Dunsparce", 0.05,"Munchlax", 0.04,"Archen", 0.04,"Bagon", 0.02,],],
+		3: [["Grass", "Swablu", 0.2,"Shroomish", 0.2,"Yanma", 0.1,"Cottonee", 0.1,"Petilil", 0.1,"Cutiefly", 0.1,"Lileep", 0.05,"Dunsparce", 0.05,"Munchlax", 0.04,"Archen", 0.04,"Bagon", 0.02,],],
 	},
 	"Route 4" :
 	{
-		0: [["Land", "Sandile", 0.2,"Slugma", 0.2,"Skorupi", 0.1,"Scraggy", 0.1,"Hippopotas", 0.1,"Sandshrew", 0.1,"Shellos", 0.05,"Numel", 0.05,"Diglett", 0.04,"Drilbur", 0.04,"Gible", 0.02,],["Fishing", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],["Surf", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],],
-		1: [["Land", "Sandile", 0.2,"Slugma", 0.2,"Skorupi", 0.1,"Scraggy", 0.1,"Hippopotas", 0.1,"Sandshrew", 0.1,"Shellos", 0.05,"Numel", 0.05,"Diglett", 0.04,"Drilbur", 0.04,"Gible", 0.02,],["Fishing", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],["Surf", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],],
-		2: [["Land", "Sandile", 0.2,"Slugma", 0.2,"Skorupi", 0.1,"Scraggy", 0.1,"Hippopotas", 0.1,"Sandshrew", 0.1,"Shellos", 0.05,"Numel", 0.05,"Diglett", 0.04,"Drilbur", 0.04,"Gible", 0.02,],["Fishing", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],["Surf", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],],
-		3: [["Land", "Sandile", 0.2,"Slugma", 0.2,"Skorupi", 0.1,"Scraggy", 0.1,"Hippopotas", 0.1,"Sandshrew", 0.1,"Shellos", 0.05,"Numel", 0.05,"Diglett", 0.04,"Drilbur", 0.04,"Gible", 0.02,],["Fishing", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],["Surf", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],],
+		0: [["Land", "Sandile", 0.2,"Slugma", 0.2,"Skorupi", 0.1,"Scraggy", 0.1,"Hippopotas", 0.1,"Sandshrew", 0.1,"Shellos (1)", 0.05,"Numel", 0.05,"Diglett", 0.04,"Drilbur", 0.04,"Gible", 0.02,],["Fishing", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],["Surf", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],],
+		1: [["Land", "Sandile", 0.2,"Slugma", 0.2,"Skorupi", 0.1,"Scraggy", 0.1,"Hippopotas", 0.1,"Sandshrew", 0.1,"Shellos (1)", 0.05,"Numel", 0.05,"Diglett", 0.04,"Drilbur", 0.04,"Gible", 0.02,],["Fishing", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],["Surf", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],],
+		2: [["Land", "Sandile", 0.2,"Slugma", 0.2,"Skorupi", 0.1,"Scraggy", 0.1,"Hippopotas", 0.1,"Sandshrew", 0.1,"Shellos (1)", 0.05,"Numel", 0.05,"Diglett", 0.04,"Drilbur", 0.04,"Gible", 0.02,],["Fishing", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],["Surf", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],],
+		3: [["Land", "Sandile", 0.2,"Slugma", 0.2,"Skorupi", 0.1,"Scraggy", 0.1,"Hippopotas", 0.1,"Sandshrew", 0.1,"Shellos (1)", 0.05,"Numel", 0.05,"Diglett", 0.04,"Drilbur", 0.04,"Gible", 0.02,],["Fishing", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],["Surf", "Corphish", 0.6,"Carvanha", 0.3,"Shellder", 0.1,],],
 	},
 	"Pinwheel Forest 1" :
 	{
-		0: [["Grass", "Sunkern", 0.2,"Surskit", 0.2,"Venonat", 0.1,"Taillow", 0.1,"Paras", 0.1,"Swadloon", 0.1,"Wurmple", 0.1,"Ledyba", 0.05,"Spinarak", 0.05,],["Fishing", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],["Surf", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],],
-		1: [["Grass", "Sunkern", 0.2,"Surskit", 0.2,"Venonat", 0.1,"Taillow", 0.1,"Paras", 0.1,"Swadloon", 0.1,"Wurmple", 0.1,"Ledyba", 0.05,"Spinarak", 0.05,],["Fishing", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],["Surf", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],],
-		2: [["Grass", "Sunkern", 0.2,"Surskit", 0.2,"Venonat", 0.1,"Taillow", 0.1,"Paras", 0.1,"Swadloon", 0.1,"Wurmple", 0.1,"Ledyba", 0.05,"Spinarak", 0.05,],["Fishing", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],["Surf", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],],
-		3: [["Grass", "Sunkern", 0.2,"Surskit", 0.2,"Venonat", 0.1,"Taillow", 0.1,"Paras", 0.1,"Swadloon", 0.1,"Wurmple", 0.1,"Ledyba", 0.05,"Spinarak", 0.05,],["Fishing", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],["Surf", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],],
+		0: [["Grass", "Sunkern", 0.2,"Surskit", 0.2,"Venonat", 0.1,"Taillow", 0.1,"Paras", 0.1,"Swadloon", 0.1,"Grubbin", 0.1,"Ledyba", 0.05,"Spinarak", 0.05,],["Fishing", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],["Surf", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],],
+		1: [["Grass", "Sunkern", 0.2,"Surskit", 0.2,"Venonat", 0.1,"Taillow", 0.1,"Paras", 0.1,"Swadloon", 0.1,"Grubbin", 0.1,"Ledyba", 0.05,"Spinarak", 0.05,],["Fishing", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],["Surf", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],],
+		2: [["Grass", "Sunkern", 0.2,"Surskit", 0.2,"Venonat", 0.1,"Taillow", 0.1,"Paras", 0.1,"Swadloon", 0.1,"Grubbin", 0.1,"Ledyba", 0.05,"Spinarak", 0.05,],["Fishing", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],["Surf", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],],
+		3: [["Grass", "Sunkern", 0.2,"Surskit", 0.2,"Venonat", 0.1,"Taillow", 0.1,"Paras", 0.1,"Swadloon", 0.1,"Grubbin", 0.1,"Ledyba", 0.05,"Spinarak", 0.05,],["Fishing", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],["Surf", "Finneon", 0.6,"Clamperl", 0.3,"Corsola", 0.1,],],
 	},
 	"Pinwheel Forest 2" :
 	{
@@ -113,17 +113,17 @@ encounterPools = {
 	},
 	"Dreamyard 1" :
 	{
-		0: [["Grass", "Munna", 0.2,"Chingling", 0.2,"Meditite", 0.15,"Elgyem", 0.1,"Misdreavus", 0.1,"Patrat", 0.1,"Herdier", 0.1,"Deino", 0.05,],],
-		1: [["Grass", "Munna", 0.2,"Chingling", 0.2,"Meditite", 0.15,"Elgyem", 0.1,"Misdreavus", 0.1,"Patrat", 0.1,"Herdier", 0.1,"Deino", 0.05,],],
-		2: [["Grass", "Munna", 0.2,"Chingling", 0.2,"Meditite", 0.15,"Elgyem", 0.1,"Misdreavus", 0.1,"Patrat", 0.1,"Herdier", 0.1,"Deino", 0.05,],],
-		3: [["Grass", "Munna", 0.2,"Chingling", 0.2,"Meditite", 0.15,"Elgyem", 0.1,"Misdreavus", 0.1,"Patrat", 0.1,"Herdier", 0.1,"Deino", 0.05,],],
+		0: [["Grass", "Munna", 0.2,"Smeargle", 0.2,"Chingling", 0.1,"Meditite", 0.1,"Elgyem", 0.1,"Misdreavus", 0.1,"Herdier", 0.1,"Hoothoot", 0.08,"Deino", 0.02,],],
+		1: [["Grass", "Munna", 0.2,"Smeargle", 0.2,"Chingling", 0.1,"Meditite", 0.1,"Elgyem", 0.1,"Misdreavus", 0.1,"Herdier", 0.1,"Hoothoot", 0.08,"Deino", 0.02,],],
+		2: [["Grass", "Munna", 0.2,"Smeargle", 0.2,"Chingling", 0.1,"Meditite", 0.1,"Elgyem", 0.1,"Misdreavus", 0.1,"Herdier", 0.1,"Hoothoot", 0.08,"Deino", 0.02,],],
+		3: [["Grass", "Munna", 0.2,"Smeargle", 0.2,"Chingling", 0.1,"Meditite", 0.1,"Elgyem", 0.1,"Misdreavus", 0.1,"Herdier", 0.1,"Hoothoot", 0.08,"Deino", 0.02,],],
 	},
 	"Dreamyard 2" :
 	{
-		0: [["Dark Grass", "Haunter", 0.2,"Exeggcute", 0.2,"Jigglypuff", 0.2,"Munna", 0.2,"Sableye", 0.1,"Chingling", 0.1,],],
-		1: [["Dark Grass", "Haunter", 0.2,"Exeggcute", 0.2,"Jigglypuff", 0.2,"Munna", 0.2,"Sableye", 0.1,"Chingling", 0.1,],],
-		2: [["Dark Grass", "Haunter", 0.2,"Exeggcute", 0.2,"Jigglypuff", 0.2,"Munna", 0.2,"Sableye", 0.1,"Chingling", 0.1,],],
-		3: [["Dark Grass", "Haunter", 0.2,"Exeggcute", 0.2,"Jigglypuff", 0.2,"Munna", 0.2,"Sableye", 0.1,"Chingling", 0.1,],],
+		0: [["Dark Grass", "Haunter", 0.2,"Exeggcute", 0.2,"Munna", 0.2,"Jigglypuff", 0.1,"Sableye", 0.1,"Chingling", 0.1,"Watchog", 0.1,],],
+		1: [["Dark Grass", "Haunter", 0.2,"Exeggcute", 0.2,"Munna", 0.2,"Jigglypuff", 0.1,"Sableye", 0.1,"Chingling", 0.1,"Watchog", 0.1,],],
+		2: [["Dark Grass", "Haunter", 0.2,"Exeggcute", 0.2,"Munna", 0.2,"Jigglypuff", 0.1,"Sableye", 0.1,"Chingling", 0.1,"Watchog", 0.1,],],
+		3: [["Dark Grass", "Haunter", 0.2,"Exeggcute", 0.2,"Munna", 0.2,"Jigglypuff", 0.1,"Sableye", 0.1,"Chingling", 0.1,"Watchog", 0.1,],],
 	},
 	"Desert Resort" :
 	{
@@ -148,10 +148,10 @@ encounterPools = {
 	},
 	"Route 16" :
 	{
-		0: [["Grass", "Mightyena", 0.2,"Tranquill", 0.2,"Exeggcute", 0.1,"Roselia", 0.1,"Doduo", 0.1,"Liepard", 0.1,"Burmy", 0.05,"Burmy", 0.05,"Skiploom", 0.04,"Burmy", 0.04,"Kangaskhan", 0.02,],],
-		1: [["Grass", "Mightyena", 0.2,"Tranquill", 0.2,"Exeggcute", 0.1,"Roselia", 0.1,"Doduo", 0.1,"Liepard", 0.1,"Burmy", 0.05,"Burmy", 0.05,"Skiploom", 0.04,"Burmy", 0.04,"Kangaskhan", 0.02,],],
-		2: [["Grass", "Mightyena", 0.2,"Tranquill", 0.2,"Exeggcute", 0.1,"Roselia", 0.1,"Doduo", 0.1,"Liepard", 0.1,"Burmy", 0.05,"Burmy", 0.05,"Skiploom", 0.04,"Burmy", 0.04,"Kangaskhan", 0.02,],],
-		3: [["Grass", "Mightyena", 0.2,"Tranquill", 0.2,"Exeggcute", 0.1,"Roselia", 0.1,"Doduo", 0.1,"Liepard", 0.1,"Burmy", 0.05,"Burmy", 0.05,"Skiploom", 0.04,"Burmy", 0.04,"Kangaskhan", 0.02,],],
+		0: [["Grass", "Mightyena", 0.2,"Tranquill", 0.2,"Exeggcute", 0.1,"Roselia", 0.1,"Doduo", 0.1,"Liepard", 0.1,"Burmy", 0.05,"Burmy (1)", 0.05,"Skiploom", 0.04,"Burmy (2)", 0.04,"Kangaskhan", 0.02,],],
+		1: [["Grass", "Mightyena", 0.2,"Tranquill", 0.2,"Exeggcute", 0.1,"Roselia", 0.1,"Doduo", 0.1,"Liepard", 0.1,"Burmy", 0.05,"Burmy (1)", 0.05,"Skiploom", 0.04,"Burmy (2)", 0.04,"Kangaskhan", 0.02,],],
+		2: [["Grass", "Mightyena", 0.2,"Tranquill", 0.2,"Exeggcute", 0.1,"Roselia", 0.1,"Doduo", 0.1,"Liepard", 0.1,"Burmy", 0.05,"Burmy (1)", 0.05,"Skiploom", 0.04,"Burmy (2)", 0.04,"Kangaskhan", 0.02,],],
+		3: [["Grass", "Mightyena", 0.2,"Tranquill", 0.2,"Exeggcute", 0.1,"Roselia", 0.1,"Doduo", 0.1,"Liepard", 0.1,"Burmy", 0.05,"Burmy (1)", 0.05,"Skiploom", 0.04,"Burmy (2)", 0.04,"Kangaskhan", 0.02,],],
 	},
 	"Lostlorn Forest" :
 	{
@@ -162,10 +162,10 @@ encounterPools = {
 	},
 	"Route 6" :
 	{
-		0: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Lombre", 0.1,"Foongus", 0.1,"Swinub", 0.1,"Snover", 0.1,"Sandshrew", 0.05,"Vanillite", 0.05,"Spheal", 0.05,"Castform", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
-		1: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Lombre", 0.1,"Bibarel", 0.1,"Foongus", 0.1,"Castform", 0.1,"Vanillite", 0.05,"Spheal", 0.05,"Snover", 0.05,"Sandshrew", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
-		2: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Foongus", 0.1,"Lombre", 0.1,"Swinub", 0.1,"Vanillite", 0.1,"Snover", 0.05,"Sandshrew", 0.05,"Spheal", 0.05,"Castform", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
-		3: [["Grass", "Snorunt", 0.2,"Snover", 0.2,"Spheal", 0.1,"Swinub", 0.1,"Vanillite", 0.1,"Sandshrew", 0.1,"Krabby", 0.05,"Foongus", 0.05,"Lombre", 0.05,"Castform", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
+		0: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Lombre", 0.1,"Foongus", 0.1,"Swinub", 0.1,"Snover", 0.1,"Sandshrew (1)", 0.05,"Vanillite", 0.05,"Spheal", 0.05,"Castform", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
+		1: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Lombre", 0.1,"Bibarel", 0.1,"Foongus", 0.1,"Castform", 0.1,"Vanillite", 0.05,"Spheal", 0.05,"Snover", 0.05,"Sandshrew (1)", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
+		2: [["Grass", "Snorunt", 0.2,"Krabby", 0.2,"Foongus", 0.1,"Lombre", 0.1,"Swinub", 0.1,"Vanillite", 0.1,"Snover", 0.05,"Sandshrew (1)", 0.05,"Spheal", 0.05,"Castform", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
+		3: [["Grass", "Snorunt", 0.2,"Snover", 0.2,"Spheal", 0.1,"Swinub", 0.1,"Vanillite", 0.1,"Sandshrew (1)", 0.1,"Krabby", 0.05,"Foongus", 0.05,"Lombre", 0.05,"Castform", 0.05,],["Fishing", "Alomomola", 1,],["Surf", "Goldeen", 0.6,"Basculin", 0.3,"Qwilfish", 0.1,],],
 	},
 	"Chargestone Cave" :
 	{
@@ -281,10 +281,10 @@ encounterPools = {
 	},
 	"Route 12" :
 	{
-		0: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Dustox", 0.1,"Beautifly", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
-		1: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Dustox", 0.1,"Beautifly", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
-		2: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Dustox", 0.1,"Beautifly", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
-		3: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Dustox", 0.1,"Beautifly", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
+		0: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Ribombee", 0.1,"Charjabug", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
+		1: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Ribombee", 0.1,"Charjabug", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
+		2: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Ribombee", 0.1,"Charjabug", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
+		3: [["Grass", "Sudowoodo", 0.2,"Nuzleaf", 0.2,"Combee", 0.1,"Persian", 0.1,"Ribombee", 0.1,"Charjabug", 0.1,"Roselia", 0.1,"Stantler", 0.1,],],
 	},
 	"Village Bridge" :
 	{

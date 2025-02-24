@@ -24,7 +24,7 @@ function SetupList(filter)
 
                 let icon = document.createElement("div");
                 icon.className = "PokedexIcon";
-                icon.style.backgroundImage = 'url(' + pokedexEntries[id].icon + ')';
+                icon.style.backgroundImage = pokedexEntries[id].icon;
                 icon.style.zIndex = 2;
                 document.getElementById('pokelist').append(icon);
 
@@ -483,7 +483,7 @@ function MakeFormIcon(x, y, poke)
     let icon = document.createElement("div");
     icon.className = "PokeFormIcon"
     icon.zIndex = 12;
-    icon.style.backgroundImage = "url(" + poke.icon + ")";
+    icon.style.backgroundImage = poke.icon;
     icon.style.top = y;
     icon.style.left = x;
     icon.addEventListener("click", function() {
