@@ -50,10 +50,10 @@ encounterPools = {
 	},
 	"Castelia Sewers" :
 	{
-		0: [["Land", "Azurill", 0.2,"Gulpin", 0.2,"Zubat", 0.1,"Koffing", 0.1,"Grimer", 0.1,"Corphish", 0.1,"Poliwag", 0.05,"Omanyte", 0.05,"Buizel", 0.05,"Wooper", 0.05,],["Fishing", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],["Surf", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],],
-		1: [["Land", "Azurill", 0.2,"Gulpin", 0.2,"Zubat", 0.1,"Koffing", 0.1,"Grimer", 0.1,"Corphish", 0.1,"Poliwag", 0.05,"Omanyte", 0.05,"Buizel", 0.05,"Wooper", 0.05,],["Fishing", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],["Surf", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],],
-		2: [["Land", "Azurill", 0.2,"Gulpin", 0.2,"Zubat", 0.1,"Koffing", 0.1,"Grimer", 0.1,"Corphish", 0.1,"Poliwag", 0.05,"Omanyte", 0.05,"Buizel", 0.05,"Wooper", 0.05,],["Fishing", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],["Surf", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],],
-		3: [["Land", "Azurill", 0.2,"Gulpin", 0.2,"Zubat", 0.1,"Koffing", 0.1,"Grimer", 0.1,"Corphish", 0.1,"Poliwag", 0.05,"Omanyte", 0.05,"Buizel", 0.05,"Wooper", 0.05,],["Fishing", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],["Surf", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],],
+		0: [["Land", "Azurill", 0.2,"Gulpin", 0.2,"Zubat", 0.1,"Koffing", 0.1,"Grimer", 0.1,"Corphish", 0.1,"Wooper", 0.1,"Poliwag", 0.05,"Omanyte", 0.05,],["Fishing", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],["Surf", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],],
+		1: [["Land", "Azurill", 0.2,"Gulpin", 0.2,"Zubat", 0.1,"Koffing", 0.1,"Grimer", 0.1,"Corphish", 0.1,"Wooper", 0.1,"Poliwag", 0.05,"Omanyte", 0.05,],["Fishing", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],["Surf", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],],
+		2: [["Land", "Azurill", 0.2,"Gulpin", 0.2,"Zubat", 0.1,"Koffing", 0.1,"Grimer", 0.1,"Corphish", 0.1,"Wooper", 0.1,"Poliwag", 0.05,"Omanyte", 0.05,],["Fishing", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],["Surf", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],],
+		3: [["Land", "Azurill", 0.2,"Gulpin", 0.2,"Zubat", 0.1,"Koffing", 0.1,"Grimer", 0.1,"Corphish", 0.1,"Wooper", 0.1,"Poliwag", 0.05,"Omanyte", 0.05,],["Fishing", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],["Surf", "Shellder", 0.6,"Poliwag", 0.3,"Wooper", 0.1,],],
 	},
 	"Relic Passage 1" :
 	{
@@ -99,10 +99,10 @@ encounterPools = {
 	},
 	"Wellspring Cave" :
 	{
-		0: [["Land", "Roggenrola", 0.2,"Aron", 0.2,"Zubat", 0.2,"Wooper", 0.2,"Woobat", 0.1,"Slowpoke", 0.1,],["Fishing", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],["Surf", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],],
-		1: [["Land", "Roggenrola", 0.2,"Aron", 0.2,"Zubat", 0.2,"Wooper", 0.2,"Woobat", 0.1,"Slowpoke", 0.1,],["Fishing", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],["Surf", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],],
-		2: [["Land", "Roggenrola", 0.2,"Aron", 0.2,"Zubat", 0.2,"Wooper", 0.2,"Woobat", 0.1,"Slowpoke", 0.1,],["Fishing", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],["Surf", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],],
-		3: [["Land", "Roggenrola", 0.2,"Aron", 0.2,"Zubat", 0.2,"Wooper", 0.2,"Woobat", 0.1,"Slowpoke", 0.1,],["Fishing", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],["Surf", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],],
+		0: [["Land", "Aron", 0.2,"Buizel", 0.2,"Roggenrola", 0.1,"Wooper", 0.1,"Zubat", 0.1,"Woobat", 0.1,"Slowpoke", 0.1,"Shelmet", 0.1,],["Fishing", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],["Surf", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],],
+		1: [["Land", "Aron", 0.2,"Buizel", 0.2,"Roggenrola", 0.1,"Wooper", 0.1,"Zubat", 0.1,"Woobat", 0.1,"Slowpoke", 0.1,"Shelmet", 0.1,],["Fishing", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],["Surf", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],],
+		2: [["Land", "Aron", 0.2,"Buizel", 0.2,"Roggenrola", 0.1,"Wooper", 0.1,"Zubat", 0.1,"Woobat", 0.1,"Slowpoke", 0.1,"Shelmet", 0.1,],["Fishing", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],["Surf", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],],
+		3: [["Land", "Aron", 0.2,"Buizel", 0.2,"Roggenrola", 0.1,"Wooper", 0.1,"Zubat", 0.1,"Woobat", 0.1,"Slowpoke", 0.1,"Shelmet", 0.1,],["Fishing", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],["Surf", "Poliwag", 0.6,"Shellder", 0.3,"Barboach", 0.1,],],
 	},
 	"Striaton City" :
 	{
@@ -155,10 +155,10 @@ encounterPools = {
 	},
 	"Lostlorn Forest" :
 	{
-		0: [["Grass", "Whirlipede", 0.2,"Cherubi", 0.2,"Carnivine", 0.1,"Volbeat", 0.1,"Illumise", 0.1,"Tangela", 0.1,"Heracross", 0.05,"Pinsir", 0.05,"Scyther", 0.08,"Dratini", 0.02,],["Fishing", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],["Surf", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],],
-		1: [["Grass", "Whirlipede", 0.2,"Cherubi", 0.2,"Carnivine", 0.1,"Volbeat", 0.1,"Illumise", 0.1,"Tangela", 0.1,"Heracross", 0.05,"Pinsir", 0.05,"Scyther", 0.08,"Dratini", 0.02,],["Fishing", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],["Surf", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],],
-		2: [["Grass", "Whirlipede", 0.2,"Cherubi", 0.2,"Carnivine", 0.1,"Volbeat", 0.1,"Illumise", 0.1,"Tangela", 0.1,"Heracross", 0.05,"Pinsir", 0.05,"Scyther", 0.08,"Dratini", 0.02,],["Fishing", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],["Surf", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],],
-		3: [["Grass", "Whirlipede", 0.2,"Cherubi", 0.2,"Carnivine", 0.1,"Volbeat", 0.1,"Illumise", 0.1,"Tangela", 0.1,"Heracross", 0.05,"Pinsir", 0.05,"Scyther", 0.08,"Dratini", 0.02,],["Fishing", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],["Surf", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],],
+		0: [["Grass", "Whirlipede", 0.2,"Karrablast", 0.2,"Carnivine", 0.1,"Volbeat", 0.1,"Illumise", 0.1,"Tangela", 0.1,"Heracross", 0.05,"Pinsir", 0.05,"Scyther", 0.08,"Dratini", 0.02,],["Fishing", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],["Surf", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],],
+		1: [["Grass", "Whirlipede", 0.2,"Karrablast", 0.2,"Carnivine", 0.1,"Volbeat", 0.1,"Illumise", 0.1,"Tangela", 0.1,"Heracross", 0.05,"Pinsir", 0.05,"Scyther", 0.08,"Dratini", 0.02,],["Fishing", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],["Surf", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],],
+		2: [["Grass", "Whirlipede", 0.2,"Karrablast", 0.2,"Carnivine", 0.1,"Volbeat", 0.1,"Illumise", 0.1,"Tangela", 0.1,"Heracross", 0.05,"Pinsir", 0.05,"Scyther", 0.08,"Dratini", 0.02,],["Fishing", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],["Surf", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],],
+		3: [["Grass", "Whirlipede", 0.2,"Karrablast", 0.2,"Carnivine", 0.1,"Volbeat", 0.1,"Illumise", 0.1,"Tangela", 0.1,"Heracross", 0.05,"Pinsir", 0.05,"Scyther", 0.08,"Dratini", 0.02,],["Fishing", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],["Surf", "Staryu", 0.6,"Frillish", 0.3,"Feebas", 0.1,],],
 	},
 	"Route 6" :
 	{

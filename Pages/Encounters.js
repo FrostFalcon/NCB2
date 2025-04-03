@@ -100,7 +100,8 @@ function LoadPieChart(pool)
         let name = encounterPools[pool][season][type][i];
         let rate = encounterPools[pool][season][type][i + 1];
         let poke = pokedexEntries.find((p) => p.name == name);
-
+        if (!poke) poke = pokedexEntries.find((p) => name.startsWith(p.name));
+        
         let typeColor = poke.type1 == "Normal" && poke.type2 != "Normal" ? poke.type2 : poke.type1;
         let color = hexToRgb(type1Colors[typeColor]);
         if (typeColor in dim)

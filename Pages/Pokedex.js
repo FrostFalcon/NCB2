@@ -296,7 +296,7 @@ function OpenPokedexEntry(poke, resetForms)
     }
 
     let eggGroups = poke.eggGroups.length == 1 ? ("Egg Group: " + poke.eggGroups[0]) : ("Egg Groups: " + poke.eggGroups[0] + ", " + poke.eggGroups[1]);
-    document.getElementById("miscText").innerHTML = "Level Rate: " + poke.levelRate + "<br>EV Yeild: " + poke.evYield + "<br>" + eggGroups;
+    document.getElementById("miscText").innerHTML = "Level Rate: " + poke.levelRate + "<br>EV Yield: " + poke.evYield + "<br>" + eggGroups;
     //if (resetForms)
     {
         document.getElementById("miscText").style.top = evoHeight;
