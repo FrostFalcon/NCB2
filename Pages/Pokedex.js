@@ -319,6 +319,8 @@ function OpenPokedexEntry(poke, resetForms)
     }
 
     //Moves
+    labels = [];
+    popups = [];
     document.getElementById("learnsetBox").innerHTML = "";
     for (let i = 0; i < poke.levelUpMoves.length; i++)
     {
@@ -348,8 +350,32 @@ function OpenPokedexEntry(poke, resetForms)
         label.innerHTML = move[0];
         label.style.top = 40 * i;
         document.getElementById("learnsetBox").appendChild(label);
+        labels.push(label);
+
+        t = document.createElement("div");
+        t.className = "MovePopup";
+        t.style.height = 128;
+        t.style.top = -32 + 40 * i + parseInt(document.getElementById("learnsetBox").parentElement.style.top);
+        t.style.left = 440;
+        t.innerHTML = "<u>" + move[0] + "</u><br>Power: " + (moveData[move[0]].category == "Status" ? "---" : moveData[move[0]].power) + "&nbsp;&nbsp;&nbsp;&nbsp;Accuracy: " + (moveData[move[0]].accuracy == "101" ? "---" : moveData[move[0]].accuracy);
+        document.getElementById("dexPage").appendChild(t);
+        popups.push(t);
     }
     document.getElementById("learnsetBox").parentElement.style.height = poke.levelUpMoves.length * 40 + 12;
+
+    //for (let i = 0; i < labels.length; i++)
+    //{
+    //    let num = i;
+    //    labels[num].addEventListener("mouseenter", () =>
+    //    {
+    //        popups[num].style.display = "block";
+    //    });
+    //    labels[num].addEventListener("mouseleave", () =>
+    //    {
+    //        popups[num].style.display = "none";
+    //    });
+    //    console.log(labels[num].style);
+    //}
 
     //TMs
     document.getElementById("learnsetTMBox").innerHTML = "";
@@ -412,6 +438,7 @@ function OpenPokedexEntry(poke, resetForms)
         t.style.top = -16 + 40 * i;
         t.style.left = 0;
         t.style.backgroundImage = "url(../Images/EggIcon.png)";
+        t.style.pointerEvents = "none";
         document.getElementById("learnsetEggMovesBox").appendChild(t);
         
         let label = document.createElement("div");
@@ -457,6 +484,7 @@ function OpenPokedexEntry(poke, resetForms)
             t.style.top = 2 + 40 * i;
             t.style.left = 32;
             t.style.backgroundImage = "url(../Images/" + shardIcon + ".png)";
+            t.style.pointerEvents = "none";
             document.getElementById("learnsetTutorsBox").appendChild(t);
         
             let label = document.createElement("div");
