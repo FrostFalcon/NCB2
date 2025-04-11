@@ -101,6 +101,28 @@ function OpenPokedexEntry(poke, resetForms)
     document.getElementById("pokeImage").style.backgroundImage = 'url("../DexSprites/' + poke.name + '.png")';
     
     document.getElementById("statBox").innerHTML = "";
+
+    let l = [document.getElementById("learnsetBox").parentElement, document.getElementById("learnsetTMBox").parentElement, document.getElementById("learnsetEggMovesBox").parentElement, document.getElementById("learnsetTutorsBox").parentElement]
+    for (let j = 0; j < l.length; j++)
+    {
+        for (let i = 0; i < l[j].children.length; i++)
+        {
+            if (l[j].children[i].className == "HomeButton")
+            {
+                l[j].removeChild(l[j].children[i]);
+                i--;
+            }
+        }
+    }
+    for (let i = 0; i < document.getElementById("dexPage").children.length; i++)
+    {
+        if (document.getElementById("dexPage").children[i].className == "MovePopup")
+        {
+            document.getElementById("dexPage").removeChild(document.getElementById("dexPage").children[i]);
+            i--;
+        }
+    }
+
     let statNames = ["Hp", "Attack", "Defense", "Sp. Att", "Sp. Def", "Speed"];
     for (let i = 0; i < 6; i++)
     {
@@ -319,8 +341,6 @@ function OpenPokedexEntry(poke, resetForms)
     }
 
     //Moves
-    labels = [];
-    popups = [];
     document.getElementById("learnsetBox").innerHTML = "";
     for (let i = 0; i < poke.levelUpMoves.length; i++)
     {
@@ -350,32 +370,33 @@ function OpenPokedexEntry(poke, resetForms)
         label.innerHTML = move[0];
         label.style.top = 40 * i;
         document.getElementById("learnsetBox").appendChild(label);
-        labels.push(label);
 
         t = document.createElement("div");
         t.className = "MovePopup";
-        t.style.height = 128;
-        t.style.top = -32 + 40 * i + parseInt(document.getElementById("learnsetBox").parentElement.style.top);
-        t.style.left = 440;
-        t.innerHTML = "<u>" + move[0] + "</u><br>Power: " + (moveData[move[0]].category == "Status" ? "---" : moveData[move[0]].power) + "&nbsp;&nbsp;&nbsp;&nbsp;Accuracy: " + (moveData[move[0]].accuracy == "101" ? "---" : moveData[move[0]].accuracy);
+        t.style.top = -120 + 40 * i + parseInt(document.getElementById("learnsetBox").parentElement.style.top);
+        t.style.left = 480;
+        t.innerHTML = "<u>" + move[0] + "</u><br>Power: " + (moveData[move[0]].category == "Status" || moveData[move[0]].power == 1 ? "---" : moveData[move[0]].power) + "&nbsp;&nbsp;&nbsp;&nbsp;Accuracy: " + (moveData[move[0]].accuracy == "101" ? "---" : moveData[move[0]].accuracy) + "<br>" + moveData[move[0]].effects;
         document.getElementById("dexPage").appendChild(t);
-        popups.push(t);
+
+        label = document.createElement("div");
+        label.className = "HomeButton";
+        label.style.width = 20;
+        label.style.height = 20;
+        label.style.top = 14 + 40 * i;
+        label.style.left = 390;
+        label.style.border = "4px outset rgb(128, 152, 168)";
+        label.style.backgroundImage = "url('../Images/QuestionMark.png')"
+        document.getElementById("learnsetBox").parentElement.append(label);
+        label.addEventListener("mousedown", () =>
+        {
+            t.style.display = "block";
+        });
+        label.addEventListener("mouseleave", () =>
+        {
+            t.style.display = "none";
+        });
     }
     document.getElementById("learnsetBox").parentElement.style.height = poke.levelUpMoves.length * 40 + 12;
-
-    //for (let i = 0; i < labels.length; i++)
-    //{
-    //    let num = i;
-    //    labels[num].addEventListener("mouseenter", () =>
-    //    {
-    //        popups[num].style.display = "block";
-    //    });
-    //    labels[num].addEventListener("mouseleave", () =>
-    //    {
-    //        popups[num].style.display = "none";
-    //    });
-    //    console.log(labels[num].style);
-    //}
 
     //TMs
     document.getElementById("learnsetTMBox").innerHTML = "";
@@ -407,6 +428,31 @@ function OpenPokedexEntry(poke, resetForms)
         label.innerHTML = move;
         label.style.top = 40 * i;
         document.getElementById("learnsetTMBox").appendChild(label);
+
+        t = document.createElement("div");
+        t.className = "MovePopup";
+        t.style.top = -120 + 40 * i + parseInt(document.getElementById("learnsetTMBox").parentElement.style.top);
+        t.style.left = 450;
+        t.innerHTML = "<u>" + move + "</u><br>Power: " + (moveData[move].category == "Status" || moveData[move].power == 1 ? "---" : moveData[move].power) + "&nbsp;&nbsp;&nbsp;&nbsp;Accuracy: " + (moveData[move].accuracy == "101" ? "---" : moveData[move].accuracy) + "<br>" + moveData[move].effects;
+        document.getElementById("dexPage").appendChild(t);
+
+        label = document.createElement("div");
+        label.className = "HomeButton";
+        label.style.width = 20;
+        label.style.height = 20;
+        label.style.top = 14 + 40 * i;
+        label.style.left = 390;
+        label.style.border = "4px outset rgb(128, 152, 168)";
+        label.style.backgroundImage = "url('../Images/QuestionMark.png')"
+        document.getElementById("learnsetTMBox").parentElement.append(label);
+        label.addEventListener("mousedown", () =>
+        {
+            t.style.display = "block";
+        });
+        label.addEventListener("mouseleave", () =>
+        {
+            t.style.display = "none";
+        });
     }
     document.getElementById("learnsetTMBox").parentElement.style.height = Math.max(poke.tms.length * 40 + 12, 40);
 
@@ -448,6 +494,31 @@ function OpenPokedexEntry(poke, resetForms)
         label.style.top = 40 * i;
         label.style.left = -20;
         document.getElementById("learnsetEggMovesBox").appendChild(label);
+
+        t = document.createElement("div");
+        t.className = "MovePopup";
+        t.style.top = -120 + 40 * i + parseInt(document.getElementById("learnsetEggMovesBox").parentElement.style.top);
+        t.style.left = 480;
+        t.innerHTML = "<u>" + move + "</u><br>Power: " + (moveData[move].category == "Status" || moveData[move].power == 1 ? "---" : moveData[move].power) + "&nbsp;&nbsp;&nbsp;&nbsp;Accuracy: " + (moveData[move].accuracy == "101" ? "---" : moveData[move].accuracy) + "<br>" + moveData[move].effects;
+        document.getElementById("dexPage").appendChild(t);
+
+        label = document.createElement("div");
+        label.className = "HomeButton";
+        label.style.width = 20;
+        label.style.height = 20;
+        label.style.top = 14 + 40 * i;
+        label.style.left = 390;
+        label.style.border = "4px outset rgb(128, 152, 168)";
+        label.style.backgroundImage = "url('../Images/QuestionMark.png')"
+        document.getElementById("learnsetEggMovesBox").parentElement.append(label);
+        label.addEventListener("mousedown", () =>
+        {
+            t.style.display = "block";
+        });
+        label.addEventListener("mouseleave", () =>
+        {
+            t.style.display = "none";
+        });
     }
     document.getElementById("learnsetEggMovesBox").parentElement.style.height = Math.max(poke.eggMoves.length * 40 + 12, 40);
 
@@ -492,7 +563,7 @@ function OpenPokedexEntry(poke, resetForms)
             label.style.display = "inline-block";
             label.innerHTML = cost;
             label.style.top = 40 * i;
-            label.style.right = 364;
+            label.style.right = 404;
             document.getElementById("learnsetTutorsBox").appendChild(label);
         }
         
@@ -502,6 +573,31 @@ function OpenPokedexEntry(poke, resetForms)
         label.innerHTML = move[1];
         label.style.top = 40 * i;
         document.getElementById("learnsetTutorsBox").appendChild(label);
+
+        t = document.createElement("div");
+        t.className = "MovePopup";
+        t.style.top = -120 + 40 * i + parseInt(document.getElementById("learnsetTutorsBox").parentElement.style.top);
+        t.style.left = 450;
+        t.innerHTML = "<u>" + move[1] + "</u><br>Power: " + (moveData[move[1]].category == "Status" || moveData[move[1]].power == 1 ? "---" : moveData[move[1]].power) + "&nbsp;&nbsp;&nbsp;&nbsp;Accuracy: " + (moveData[move[1]].accuracy == "101" ? "---" : moveData[move[1]].accuracy) + "<br>" + moveData[move[1]].effects;
+        document.getElementById("dexPage").appendChild(t);
+
+        label = document.createElement("div");
+        label.className = "HomeButton";
+        label.style.width = 20;
+        label.style.height = 20;
+        label.style.top = 14 + 40 * i;
+        label.style.left = 390;
+        label.style.border = "4px outset rgb(128, 152, 168)";
+        label.style.backgroundImage = "url('../Images/QuestionMark.png')"
+        document.getElementById("learnsetTutorsBox").parentElement.append(label);
+        label.addEventListener("mousedown", () =>
+        {
+            t.style.display = "block";
+        });
+        label.addEventListener("mouseleave", () =>
+        {
+            t.style.display = "none";
+        });
     }
     document.getElementById("learnsetTutorsBox").parentElement.style.height = Math.max(poke.tutors.length * 40 + 12, 40);
 }
