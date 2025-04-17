@@ -95,6 +95,15 @@ function GoHome()
     window.location.replace("../index.html");
 }
 
+showStatChanges = false;
+
+function ToggleStatChanges()
+{
+    showStatChanges = !showStatChanges;
+    document.getElementById("StatChangesButton").style.backgroundImage = showStatChanges ? "url(../Images/StatChangesOn.png)" : "url(../Images/StatChangesOff.png)";
+    OpenPokedexEntry(pokedexEntries[currentPoke], true);
+}
+
 function OpenPokedexEntry(poke, resetForms)
 {
     currentPoke = pokedexEntries.indexOf(poke);
@@ -134,7 +143,7 @@ function OpenPokedexEntry(poke, resetForms)
         label.style.top = 40 * i;
         document.getElementById("statBox").appendChild(label);
 
-        if (!(poke.id in iconSwaps))
+        if (!(poke.id in iconSwaps) && showStatChanges)
         {
             let bar = document.createElement("div");
             bar.className = "StatBar";

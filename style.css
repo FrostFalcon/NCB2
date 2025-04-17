@@ -50,6 +50,11 @@
     height: 56;
     border: 6px outset rgb(128, 152, 168);
     transition: 0.2s;
+    
+    font: 20px monospace;
+    color: black;
+    text-align: center;
+    text-shadow: 1px 1px gray;
 }
 
 .HomeButton:hover
