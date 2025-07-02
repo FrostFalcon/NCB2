@@ -29,6 +29,15 @@
     background-color: rgb(211, 211, 211);
 }
 
+.MainText
+{
+    font: 24px monospace;
+    text-shadow: 2px 4px 0 gray;
+    color: white;
+    margin-left: 16px;
+    line-height: 32px;
+}
+
 @keyframes scroll {
     from   {background-position: 100%;}
     to  {background-position: 0%;}
@@ -135,4 +144,14 @@
     height: 40;
     padding: 10px;
     user-select: none;
+}
+
+.PokeImage
+{
+    image-rendering: pixelated;
+    z-index: 6;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
 }

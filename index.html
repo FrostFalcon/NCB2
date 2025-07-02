@@ -21,21 +21,78 @@
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 	overflow-y: hidden;">
+	<div style="background-image: url('Images/HomeBG.png');
+	z-index: 2;
+	background-position: 0 0;
+	position: fixed;
+	top: 0px;
+	left: 1000px;
+	width: 920;
+	height: 900;
+	overflow-y: hidden;"></div>
 		<br><br><br><br><br>
-		<button class="MainMenuButton PokedexButton" onclick="OpenPokedex()">Pokedex</button>
+		<div class="MainText" style="width: 50%;">Welcome to Pokemon Infinite Black 2: A rom hack made to add variety, replayability, and explore new ideas.
+			Some key features include massively expanded encounter pools and reworks to many pokemon to make them more unique.
+			It also works great for nuzlockes and other challenge runs that would offer room for new Pokemon to shine.</div>
+		<br><br>
+		<button class="MainMenuButton PokedexButton" onclick="OpenPokedex()">Pokedex</button><br>
 		<button class="MainMenuButton EncountersButton" onclick="OpenEncounters()">Encounters</button>
-		
+		<br><br><br>
+		<div class="MainText" style="width: 50%;">Credits:
+			<br>Lead Developer - Frost Falcon
+			<br>Custom Sprites - Ninja Fish
+			<br>New Gen Sprites - The Smogon Sprite Project and Moon Black 2
+			<br>Coding Assistance - Dasquyd, Dararo, Anonymous, and others from the Kingdom of DS Rom Hacking Discord
+		</div>
+		<br><br>
 		<a class="MainMenuButton" href="InfiniteBlack2Patch.zip" style="
-		position: absolute;
-		bottom: 40;
-		left: 0;
 		width: 200;
 		height: 30;
 		text-align: center;
 		color: black;
 		filter: brightness(0.75);
 		">Download Patch</a>
+		<a class="MainMenuButton" href="https://youtu.be/_uUtLfby8_c" style="
+		width: 200;
+		height: 30;
+		text-align: center;
+		color: black;
+		filter: brightness(0.75);
+		">Update Video</a>
 	</div>
+	<div class="PokeImage" style="
+		position: absolute;
+		left: 1112px;
+		top: 80px;
+		background-image: url(DexSprites/Salamence.png);
+		width: 384;
+		height: 384;
+		"></div>
+	<div class="PokeImage" style="
+		position: absolute;
+		left: 1516px;
+		top: 364px;
+		background-image: url(DexSprites/Sandslash.png);
+		width: 384;
+		height: 384;
+		"></div>
+	<div class="PokeImage" style="
+		position: absolute;
+		left: 1520px;
+		top: 8px;
+		background-image: url(Images/InB2Logo.png);
+		width: 384;
+		height: 384;
+    	image-rendering: auto;
+		"></div>
+	<div class="PokeImage" style="
+		position: absolute;
+		left: 1036px;
+		top: 488px;
+		background-image: url(DexSprites/Rapidash.png);
+		width: 384;
+		height: 384;
+		"></div>
 	<script>
 		function OpenPokedex()
 		{
