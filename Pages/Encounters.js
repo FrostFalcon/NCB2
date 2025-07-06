@@ -31,7 +31,7 @@ function SetupCategories()
         b.innerHTML = text[i];
         b.style.left = 128 + 192 * i;
         b.style.top = 92;
-        b.style.zIndex = 8;
+        b.style.zIndex = 20;
         let str = text[i];
         b.addEventListener ("click", function() {
             OpenTab(str);
