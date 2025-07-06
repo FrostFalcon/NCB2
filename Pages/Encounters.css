@@ -1,7 +1,7 @@
 .Banner
 {
     font: 48px monospace;
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     background-image: url(../Images/EncountersTop.png);
@@ -22,7 +22,7 @@
 {
     background-image: url(../Images/PokedexBottom.png);
     z-index: 3;
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     image-rendering: pixelated;
@@ -85,7 +85,7 @@
     background-position: center;
     background-position-x: 50%;
     background-repeat: no-repeat;
-    position: fixed;
+    position: absolute;
     
     font: 24px monospace;
     color: white;
@@ -181,7 +181,7 @@
 
 .BlackDropdown
 {
-    position: fixed;
+    position: absolute;
     height: 28;
     width: 120;
     font: 20px monospace;

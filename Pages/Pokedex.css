@@ -1,7 +1,7 @@
 .Banner
 {
     font: 48px monospace;
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     background-image: url(../Images/PokedexTop.png);
@@ -22,7 +22,7 @@
 {
     background-image: url(../Images/PokedexBottom.png);
     z-index: 3;
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     image-rendering: pixelated;
