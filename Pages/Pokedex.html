@@ -201,12 +201,24 @@
         SetupList("")
         OpenPokedexEntry(pokedexEntries[0], true);
 
+        function UpdateZoom()
+		{
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+            {
+                screen.orientation.lock("landscape");
+            }
+            else
+            {
+                document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
+            }
+		}
+
         function GetZoom() {return Math.min(Math.ceil(window.innerWidth / 19.2), Math.ceil(window.innerHeight / 9.25));}
-        document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
         window.addEventListener("resize", () =>
         {
-            document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
+            UpdateZoom();
         });
+        UpdateZoom();
     </script>
     </body>
 </HTML>

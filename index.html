@@ -11,7 +11,7 @@
 	<div id="dexBG" style="background-image: url('Images/PokedexBGGray.png');
 	z-index: 2;
 	background-position: 0 0;
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	left: 0;
 	width: 1920;
@@ -21,15 +21,6 @@
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 	overflow-y: hidden;">
-	<div style="background-image: url('Images/HomeBG.png');
-	z-index: 2;
-	background-position: 0 0;
-	position: fixed;
-	top: 0px;
-	left: 1000px;
-	width: 920;
-	height: 900;
-	overflow-y: hidden;"></div>
 		<br><br><br><br><br>
 		<div class="MainText" style="width: 50%;">Welcome to Pokemon Infinite Black 2: A rom hack made to add variety, replayability, and explore new ideas.
 			Some key features include massively expanded encounter pools and reworks to many pokemon to make them more unique.
@@ -60,6 +51,16 @@
 		filter: brightness(0.75);
 		">Update Video</a>
 	</div>
+	
+	<div id="sidePanel" style="background-image: url('Images/HomeBG.png');
+		z-index: 2;
+		background-position: 0 0;
+		position: absolute;
+		top: 0px;
+		left: 1000px;
+		width: 920;
+		height: 900;
+		overflow-y: hidden;"></div>
 	<div id="poke1" class="PokeImage" style="
 		position: absolute;
 		left: 1112px;
@@ -76,7 +77,7 @@
 		width: 384;
 		height: 384;
 		"></div>
-	<div class="PokeImage" style="
+	<div id="logo" class="PokeImage" style="
 		position: absolute;
 		left: 1520px;
 		top: 8px;
@@ -163,12 +164,40 @@
 			window.location.replace("Pages/TeamBuilder.html");
 		}
 
-		function GetZoom() {return Math.min(Math.ceil(window.innerWidth / 19.2), Math.ceil(window.innerHeight / 9.25));}
-		document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
-		window.addEventListener("resize", () =>
+		function UpdateZoom()
 		{
 			document.getElementById("zoomBody").style.zoom = GetZoom() + "%";
+			//if (orientation == 0 && window.innerWidth / window.innerHeight < 1)
+			//{
+			//	orientation = 1;
+			//	for (panel of [document.getElementById("sidePanel").style, document.getElementById("poke1").style,
+			//		document.getElementById("poke2").style, document.getElementById("poke3").style, document.getElementById("logo").style
+			//	])
+			//	{
+			//		panel.top = parseInt(panel.top) + 960;
+			//		panel.left = parseInt(panel.left) - 1000;
+			//	}
+			//}
+			//if (orientation == 1 && window.innerWidth / window.innerHeight >= 1)
+			//{
+			//	orientation = 0;
+			//	for (panel of [document.getElementById("sidePanel").style, document.getElementById("poke1").style,
+			//		document.getElementById("poke2").style, document.getElementById("poke3").style, document.getElementById("logo").style
+			//	])
+			//	{
+			//		panel.top = parseInt(panel.top) - 960;
+			//		panel.left = parseInt(panel.left) + 1000;
+			//	}
+			//}
+		}
+
+		var orientation = 0;
+		function GetZoom() {return Math.min(Math.ceil(window.innerWidth / 19.2), Math.ceil(window.innerHeight / 9.25));}
+		window.addEventListener("resize", () =>
+		{
+			UpdateZoom();
 		});
+		UpdateZoom();
 	</script>
 	</body>
 </HTML>
