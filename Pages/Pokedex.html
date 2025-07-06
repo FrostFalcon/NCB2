@@ -15,7 +15,7 @@
 
     <div class="HomeButton" style="background-image: url(../Images/HomeIcon.png);
     z-index: 8;
-    position: fixed;
+    position: absolute;
     top: 68px;
     left: 676px;"
     onclick="GoHome()"></div>
@@ -29,14 +29,14 @@
         <br>
 
         <label style="
-        position: fixed;
+        position: absolute;
         top: 100;
         font: 24px sans-serif;
         z-index: 6;"
         for="searchBox">Search:</label>
 
         <input style="
-        position: fixed;
+        position: absolute;
         height: 28;
         top: 100;
         left: 100;
@@ -45,7 +45,7 @@
         type="text" id="searchBox" name="searchBox">
 
         <select style="
-        position: fixed;
+        position: absolute;
         height: 28;
         width: 112;
         top: 100;
@@ -65,7 +65,7 @@
         <div id="pokelist" style="background-image: url(../Images/PokedexBG.png);
         z-index: 2;
         background-position: 0 0;
-        position: fixed;
+        position: absolute;
         top: 150px;
         left: 0;
         width: 768;
@@ -90,10 +90,10 @@
         height: 824;
         left: 804;
         top: 36;
-        position: fixed;
+        position: absolute;
         overflow-y: scroll;">
 
-            <div style="background-image: url(../Images/PokedexOutline.png); pointer-events: none; z-index: 20; position: fixed; left: 768; top: 0; width: 1156; height: 881;"></div>
+            <div style="background-image: url(../Images/PokedexOutline.png); pointer-events: none; z-index: 20; position: absolute; left: 768; top: 0; width: 1156; height: 881;"></div>
             <div class="ScrollingArrows" style="left: 0; top: 28; width: 1068; height: 280;"></div>
             <div class="PokePortrait" id="pokeImage" style="left: 16; top: 12; width: 320; height: 320;"></div>
             <div class="PortraitCorners" style="left: 0; top: 0; width: 344; height: 344;"></div>
